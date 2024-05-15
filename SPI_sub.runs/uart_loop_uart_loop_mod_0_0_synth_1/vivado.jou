@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue May 14 14:21:41 2024
+# Process ID: 64272
+# Current directory: /home/jacob/Documents/Semester4/FPGA/Assignment_3/SPI_sub/SPI_sub.runs/uart_loop_uart_loop_mod_0_0_synth_1
+# Command line: vivado -log uart_loop_uart_loop_mod_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_loop_uart_loop_mod_0_0.tcl
+# Log file: /home/jacob/Documents/Semester4/FPGA/Assignment_3/SPI_sub/SPI_sub.runs/uart_loop_uart_loop_mod_0_0_synth_1/uart_loop_uart_loop_mod_0_0.vds
+# Journal file: /home/jacob/Documents/Semester4/FPGA/Assignment_3/SPI_sub/SPI_sub.runs/uart_loop_uart_loop_mod_0_0_synth_1/vivado.jou
+# Running On: Laptop, OS: Linux, CPU Frequency: 4180.766 MHz, CPU Physical cores: 8, Host memory: 16109 MB
+#-----------------------------------------------------------
+source uart_loop_uart_loop_mod_0_0.tcl -notrace

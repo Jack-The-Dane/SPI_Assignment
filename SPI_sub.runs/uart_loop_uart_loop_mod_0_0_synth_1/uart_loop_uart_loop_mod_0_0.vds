@@ -1,0 +1,214 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue May 14 14:21:41 2024
+# Process ID: 64272
+# Current directory: /home/jacob/Documents/Semester4/FPGA/Assignment_3/SPI_sub/SPI_sub.runs/uart_loop_uart_loop_mod_0_0_synth_1
+# Command line: vivado -log uart_loop_uart_loop_mod_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_loop_uart_loop_mod_0_0.tcl
+# Log file: /home/jacob/Documents/Semester4/FPGA/Assignment_3/SPI_sub/SPI_sub.runs/uart_loop_uart_loop_mod_0_0_synth_1/uart_loop_uart_loop_mod_0_0.vds
+# Journal file: /home/jacob/Documents/Semester4/FPGA/Assignment_3/SPI_sub/SPI_sub.runs/uart_loop_uart_loop_mod_0_0_synth_1/vivado.jou
+# Running On: Laptop, OS: Linux, CPU Frequency: 4180.766 MHz, CPU Physical cores: 8, Host memory: 16109 MB
+#-----------------------------------------------------------
+source uart_loop_uart_loop_mod_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1271.012 ; gain = 14.898 ; free physical = 5130 ; free virtual = 10473
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/jacob/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: uart_loop_uart_loop_mod_0_0
+Command: synth_design -top uart_loop_uart_loop_mod_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 64326
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1703.477 ; gain = 409.684 ; free physical = 4409 ; free virtual = 9752
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'uart_loop_uart_loop_mod_0_0' [/home/jacob/Documents/Semester4/FPGA/Assignment_3/SPI_sub/SPI_sub.gen/sources_1/bd/uart_loop/ip/uart_loop_uart_loop_mod_0_0/synth/uart_loop_uart_loop_mod_0_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'uart_loop_mod' [/home/jacob/Documents/Semester4/FPGA/Assignment_3/SPI_sub/SPI_sub.srcs/sources_1/new/uart_loop_mod_fsm.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'uart_loop_mod' (0#1) [/home/jacob/Documents/Semester4/FPGA/Assignment_3/SPI_sub/SPI_sub.srcs/sources_1/new/uart_loop_mod_fsm.vhd:45]
+INFO: [Synth 8-6155] done synthesizing module 'uart_loop_uart_loop_mod_0_0' (0#1) [/home/jacob/Documents/Semester4/FPGA/Assignment_3/SPI_sub/SPI_sub.gen/sources_1/bd/uart_loop/ip/uart_loop_uart_loop_mod_0_0/synth/uart_loop_uart_loop_mod_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1777.445 ; gain = 483.652 ; free physical = 4313 ; free virtual = 9657
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1795.258 ; gain = 501.465 ; free physical = 4314 ; free virtual = 9658
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1803.262 ; gain = 509.469 ; free physical = 4314 ; free virtual = 9658
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'uart_loop_mod'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                              001 |                               00
+                      s1 |                              010 |                               01
+                      s2 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'uart_loop_mod'
+WARNING: [Synth 8-327] inferring latch for variable 'shift_load_reg' [/home/jacob/Documents/Semester4/FPGA/Assignment_3/SPI_sub/SPI_sub.srcs/sources_1/new/uart_loop_mod_fsm.vhd:136]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1812.168 ; gain = 518.375 ; free physical = 4306 ; free virtual = 9651
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1949.387 ; gain = 655.594 ; free physical = 4166 ; free virtual = 9510
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1949.387 ; gain = 655.594 ; free physical = 4165 ; free virtual = 9510
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1949.387 ; gain = 655.594 ; free physical = 4165 ; free virtual = 9510
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1949.387 ; gain = 655.594 ; free physical = 4165 ; free virtual = 9509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1949.387 ; gain = 655.594 ; free physical = 4165 ; free virtual = 9509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1949.387 ; gain = 655.594 ; free physical = 4165 ; free virtual = 9509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1949.387 ; gain = 655.594 ; free physical = 4165 ; free virtual = 9509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1949.387 ; gain = 655.594 ; free physical = 4165 ; free virtual = 9509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1949.387 ; gain = 655.594 ; free physical = 4165 ; free virtual = 9509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     1|
+|2     |LUT4 |     2|
+|3     |FDCE |    10|
+|4     |FDPE |     1|
+|5     |LD   |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+--------------+------+
+|      |Instance |Module        |Cells |
++------+---------+--------------+------+
+|1     |top      |              |    15|
+|2     |  inst   |uart_loop_mod |    15|
++------+---------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1949.387 ; gain = 655.594 ; free physical = 4165 ; free virtual = 9509
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1949.387 ; gain = 655.594 ; free physical = 4164 ; free virtual = 9509
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1949.395 ; gain = 655.594 ; free physical = 4164 ; free virtual = 9509
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1963.262 ; gain = 0.000 ; free physical = 4441 ; free virtual = 9786
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2102.945 ; gain = 0.000 ; free physical = 4360 ; free virtual = 9705
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LD => LDCE: 1 instance 
+
+Synth Design complete | Checksum: a084bd5f
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 2102.980 ; gain = 812.156 ; free physical = 4360 ; free virtual = 9705
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1595.860; main = 1365.644; forked = 374.465
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2940.039; main = 2102.949; forked = 990.648
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2448.918 ; gain = 0.000 ; free physical = 4186 ; free virtual = 9531
+INFO: [Common 17-1381] The checkpoint '/home/jacob/Documents/Semester4/FPGA/Assignment_3/SPI_sub/SPI_sub.runs/uart_loop_uart_loop_mod_0_0_synth_1/uart_loop_uart_loop_mod_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2448.918 ; gain = 345.938 ; free physical = 4181 ; free virtual = 9525
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP uart_loop_uart_loop_mod_0_0, cache-ID = 34b381527a15db80
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2448.918 ; gain = 0.000 ; free physical = 4177 ; free virtual = 9522
+INFO: [Common 17-1381] The checkpoint '/home/jacob/Documents/Semester4/FPGA/Assignment_3/SPI_sub/SPI_sub.runs/uart_loop_uart_loop_mod_0_0_synth_1/uart_loop_uart_loop_mod_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file uart_loop_uart_loop_mod_0_0_utilization_synth.rpt -pb uart_loop_uart_loop_mod_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 14 14:22:10 2024...

@@ -1,0 +1,51 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.00701",
+   "Default View_TopLeft":"-479,-247",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_MISO -pg 1 -lvl 7 -x 1240 -y 30 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -470 -y -170 -defaultsOSRD
+preplace port port-id_MOSI -pg 1 -lvl 0 -x -470 -y -50 -defaultsOSRD
+preplace port port-id_SCLK -pg 1 -lvl 0 -x -470 -y 70 -defaultsOSRD
+preplace port port-id_CS -pg 1 -lvl 0 -x -470 -y 190 -defaultsOSRD
+preplace port port-id_rst -pg 1 -lvl 0 -x -470 -y -190 -defaultsOSRD
+preplace port port-id_sout -pg 1 -lvl 7 -x 1240 -y 120 -defaultsOSRD
+preplace port port-id_sin -pg 1 -lvl 0 -x -470 -y 250 -defaultsOSRD
+preplace inst SPI_sub -pg 1 -lvl 4 -x 590 -y -130 -defaultsOSRD
+preplace inst MOSI_synchronizer -pg 1 -lvl 1 -x -330 -y -70 -defaultsOSRD
+preplace inst SCLK_synchronizer -pg 1 -lvl 1 -x -330 -y 50 -defaultsOSRD
+preplace inst CS_synchronizer -pg 1 -lvl 1 -x -330 -y 170 -defaultsOSRD
+preplace inst SCLK_rising_edge_detector -pg 1 -lvl 2 -x -90 -y -90 -defaultsOSRD
+preplace inst SCLK_falling_edge_detector -pg 1 -lvl 2 -x -90 -y 30 -defaultsOSRD
+preplace inst tx_mod_0 -pg 1 -lvl 6 -x 1080 -y 130 -defaultsOSRD
+preplace inst clock_div_0 -pg 1 -lvl 4 -x 590 -y 160 -defaultsOSRD
+preplace inst rx_mod_0 -pg 1 -lvl 3 -x 170 -y 230 -defaultsOSRD
+preplace inst sin_synchronizer -pg 1 -lvl 1 -x -330 -y 300 -defaultsOSRD
+preplace inst AND_gate_0 -pg 1 -lvl 5 -x 850 -y 30 -defaultsOSRD
+preplace netloc CS_synchronizer_Q 1 1 3 -220 -170 NJ -170 400J
+preplace netloc D_0_1 1 0 1 -450 -60n
+preplace netloc D_0_2 1 0 1 -450 60n
+preplace netloc D_0_3 1 0 1 -430 180n
+preplace netloc MOSI_synchronizer_Q 1 1 3 -230 -160 20 -110 N
+preplace netloc SCLK_falling_edge_detector_Q 1 2 2 N 30 410
+preplace netloc SCLK_rising_edge_detector_Q 1 2 2 N -90 290
+preplace netloc SCLK_synchronizer_Q 1 1 1 -200 -80n
+preplace netloc SPI_sub_data_out 1 4 2 N -130 950
+preplace netloc clk_0_1 1 0 4 -440J -140 -210J -180 NJ -180 390
+preplace netloc clock_div_0_clk_div 1 2 4 50 80 N 80 760 100 N
+preplace netloc fsm_template_0_MISO 1 4 3 NJ -150 N -150 1220
+preplace netloc rst_0_1 1 0 6 NJ -190 NJ -190 40J 50 420 90 750 140 N
+preplace netloc sin_1 1 0 1 -450 250n
+preplace netloc synchronizer_0_Q 1 1 2 -230 250 NJ
+preplace netloc tx_mod_0_sout 1 6 1 N 120
+preplace netloc rx_mod_0_data_out 1 3 1 430 -70n
+preplace netloc SPI_sub_transmission_done 1 4 1 750 -110n
+preplace netloc tx_mod_0_xmitmt 1 4 3 760 -40 NJ -40 1210
+preplace netloc AND_gate_0_C 1 5 1 940 30n
+levelinfo -pg 1 -470 -330 -90 170 590 850 1080 1240
+pagesize -pg 1 -db -bbox -sgen -600 -250 1330 370
+"
+}
+0
