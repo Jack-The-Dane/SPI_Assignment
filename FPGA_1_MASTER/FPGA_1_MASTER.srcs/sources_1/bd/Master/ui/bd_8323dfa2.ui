@@ -1,0 +1,51 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.972775",
+   "Default View_TopLeft":"-45,-745",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -120 -y -140 -defaultsOSRD
+preplace port port-id_rst -pg 1 -lvl 0 -x -120 -y -170 -defaultsOSRD
+preplace port port-id_MISO -pg 1 -lvl 0 -x -120 -y -60 -defaultsOSRD
+preplace port port-id_MOSI -pg 1 -lvl 7 -x 1780 -y -100 -defaultsOSRD
+preplace port port-id_CS -pg 1 -lvl 7 -x 1780 -y -520 -defaultsOSRD
+preplace port port-id_sin -pg 1 -lvl 0 -x -120 -y -320 -defaultsOSRD
+preplace port port-id_sout -pg 1 -lvl 7 -x 1780 -y 10 -defaultsOSRD
+preplace port port-id_SCLK -pg 1 -lvl 7 -x 1780 -y -400 -defaultsOSRD
+preplace inst shift_register_gener_0 -pg 1 -lvl 4 -x 1070 -y -70 -defaultsOSRD
+preplace inst latch_0 -pg 1 -lvl 5 -x 1360 -y -200 -defaultsOSRD
+preplace inst prescaler_0 -pg 1 -lvl 4 -x 1070 -y -320 -defaultsOSRD
+preplace inst Chip_Select_0 -pg 1 -lvl 2 -x 440 -y -400 -defaultsOSRD
+preplace inst NOT_gate_0 -pg 1 -lvl 3 -x 650 -y -340 -defaultsOSRD
+preplace inst rx_mod_0 -pg 1 -lvl 2 -x 440 -y -260 -defaultsOSRD
+preplace inst tx_mod_0 -pg 1 -lvl 6 -x 1620 -y -160 -defaultsOSRD
+preplace inst clock_div_0 -pg 1 -lvl 2 -x 440 -y -100 -defaultsOSRD
+preplace inst clock_div_1 -pg 1 -lvl 1 -x 180 -y -230 -defaultsOSRD
+preplace inst AND_gate_0 -pg 1 -lvl 4 -x 1070 -y -450 -defaultsOSRD
+preplace inst AND_gate_1 -pg 1 -lvl 5 -x 1360 -y -340 -defaultsOSRD
+preplace inst NOT_gate_1 -pg 1 -lvl 6 -x 1620 -y -410 -defaultsOSRD
+preplace netloc AND_gate_0_C 1 4 2 NJ -450 1490
+preplace netloc AND_gate_1_C 1 5 1 1460 -340n
+preplace netloc Chip_Select_0_CS 1 2 5 570J -400 900J -520 NJ -520 NJ -520 N
+preplace netloc MISO_1 1 0 4 NJ -60 290 -30 N -30 N
+preplace netloc NOT_gate_0_B 1 3 1 890 -440n
+preplace netloc NOT_gate_1_B 1 6 1 1740 -410n
+preplace netloc clk_1 1 0 2 90 -90 N
+preplace netloc clk_div_0_clk_div 1 1 5 300 -530 N -530 N -530 N -530 1500
+preplace netloc clock_divider_0_clk_div 1 1 3 330 -180 560 -180 920
+preplace netloc latch_0_Q 1 5 1 1470 -200n
+preplace netloc prescaler_0_cnt 1 4 1 1250 -350n
+preplace netloc rst_0_1 1 0 6 80J -300 290 -170 N -170 910 -220 1240 -410 1480
+preplace netloc rx_mod_0_data_out 1 2 2 NJ -270 730J
+preplace netloc rx_mod_0_intr 1 1 2 310 -470 550
+preplace netloc shift_register_gener_0_carry_out 1 4 3 N -60 N -60 1760
+preplace netloc shift_register_gener_0_register_out 1 4 1 1220 -180n
+preplace netloc sin_1 1 0 2 N -320 320
+preplace netloc tx_mod_0_sout 1 6 1 1750 -170n
+preplace netloc tx_mod_0_xmitmt 1 4 3 1260 -70 NJ -70 1740
+levelinfo -pg 1 -120 180 440 650 1070 1360 1620 1780
+pagesize -pg 1 -db -bbox -sgen -220 -600 1870 200
+"
+}
+0

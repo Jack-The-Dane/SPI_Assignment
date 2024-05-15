@@ -1,0 +1,628 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xF1ADE5AFFC5D9877",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../FPGA_1_MASTER.gen/sources_1/bd/Master",
+      "name": "Master",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "shift_register_gener_0": "",
+      "latch_0": "",
+      "prescaler_0": "",
+      "Chip_Select_0": "",
+      "NOT_gate_0": "",
+      "rx_mod_0": "",
+      "tx_mod_0": "",
+      "clock_div_0": "",
+      "clock_div_1": "",
+      "AND_gate_0": "",
+      "AND_gate_1": "",
+      "NOT_gate_1": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "Master_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "MISO": {
+        "direction": "I"
+      },
+      "MOSI": {
+        "direction": "O"
+      },
+      "CS": {
+        "direction": "O"
+      },
+      "sin": {
+        "direction": "I"
+      },
+      "sout": {
+        "direction": "O"
+      },
+      "SCLK": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "shift_register_gener_0": {
+        "vlnv": "xilinx.com:module_ref:shift_register_generic:1.0",
+        "ip_revision": "1",
+        "xci_name": "Master_shift_register_gener_0_0",
+        "xci_path": "ip\\Master_shift_register_gener_0_0\\Master_shift_register_gener_0_0.xci",
+        "inst_hier_path": "shift_register_gener_0",
+        "parameters": {
+          "register_length": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "shift_register_generic",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sample": {
+            "direction": "I"
+          },
+          "chip_select": {
+            "direction": "I"
+          },
+          "register_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "data": {
+            "direction": "I"
+          },
+          "register_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "carry_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "latch_0": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "ip_revision": "1",
+        "xci_name": "Master_latch_0_0",
+        "xci_path": "ip\\Master_latch_0_0\\Master_latch_0_0.xci",
+        "inst_hier_path": "latch_0",
+        "parameters": {
+          "data_length": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "cnt": {
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "prescaler_0": {
+        "vlnv": "xilinx.com:module_ref:prescaler:1.0",
+        "ip_revision": "1",
+        "xci_name": "Master_prescaler_0_0",
+        "xci_path": "ip\\Master_prescaler_0_0\\Master_prescaler_0_0.xci",
+        "inst_hier_path": "prescaler_0",
+        "parameters": {
+          "data_length": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "prescaler",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "en": {
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "sample": {
+            "direction": "I"
+          },
+          "cnt": {
+            "direction": "O"
+          }
+        }
+      },
+      "Chip_Select_0": {
+        "vlnv": "xilinx.com:module_ref:Chip_Select:1.0",
+        "ip_revision": "1",
+        "xci_name": "Master_Chip_Select_0_0",
+        "xci_path": "ip\\Master_Chip_Select_0_0\\Master_Chip_Select_0_0.xci",
+        "inst_hier_path": "Chip_Select_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Chip_Select",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SCLK": {
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I",
+            "parameters": {
+              "SENSITIVITY": {
+                "value": "LEVEL_HIGH",
+                "value_src": "const_prop"
+              },
+              "PortWidth": {
+                "value": "1",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "CS": {
+            "direction": "O"
+          }
+        }
+      },
+      "NOT_gate_0": {
+        "vlnv": "xilinx.com:module_ref:NOT_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "Master_NOT_gate_0_0",
+        "xci_path": "ip\\Master_NOT_gate_0_0\\Master_NOT_gate_0_0.xci",
+        "inst_hier_path": "NOT_gate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "NOT_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "O"
+          }
+        }
+      },
+      "rx_mod_0": {
+        "vlnv": "xilinx.com:module_ref:rx_mod:1.0",
+        "ip_revision": "1",
+        "xci_name": "Master_rx_mod_0_0",
+        "xci_path": "ip\\Master_rx_mod_0_0\\Master_rx_mod_0_0.xci",
+        "inst_hier_path": "rx_mod_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "rx_mod",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "sin": {
+            "direction": "I"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "intr": {
+            "type": "intr",
+            "direction": "O",
+            "parameters": {
+              "SENSITIVITY": {
+                "value": "LEVEL_HIGH",
+                "value_src": "constant"
+              },
+              "PortWidth": {
+                "value": "1",
+                "value_src": "default_prop"
+              }
+            }
+          }
+        }
+      },
+      "tx_mod_0": {
+        "vlnv": "xilinx.com:module_ref:tx_mod:1.0",
+        "ip_revision": "1",
+        "xci_name": "Master_tx_mod_0_0",
+        "xci_path": "ip\\Master_tx_mod_0_0\\Master_tx_mod_0_0.xci",
+        "inst_hier_path": "tx_mod_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "tx_mod",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clkfast": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "shift_load": {
+            "direction": "I"
+          },
+          "sout": {
+            "direction": "O"
+          },
+          "xmitmt": {
+            "direction": "O"
+          }
+        }
+      },
+      "clock_div_0": {
+        "vlnv": "xilinx.com:module_ref:clock_div:1.0",
+        "ip_revision": "1",
+        "xci_name": "Master_clock_div_0_0",
+        "xci_path": "ip\\Master_clock_div_0_0\\Master_clock_div_0_0.xci",
+        "inst_hier_path": "clock_div_0",
+        "parameters": {
+          "half_val": {
+            "value": "4096"
+          },
+          "n_bits": {
+            "value": "13"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_div",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "Master_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clk_div": {
+            "direction": "O"
+          }
+        }
+      },
+      "clock_div_1": {
+        "vlnv": "xilinx.com:module_ref:clock_div:1.0",
+        "ip_revision": "1",
+        "xci_name": "Master_clock_div_1_0",
+        "xci_path": "ip\\Master_clock_div_1_0\\Master_clock_div_1_0.xci",
+        "inst_hier_path": "clock_div_1",
+        "parameters": {
+          "half_val": {
+            "value": "407"
+          },
+          "n_bits": {
+            "value": "10"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_div",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "Master_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clk_div": {
+            "direction": "O"
+          }
+        }
+      },
+      "AND_gate_0": {
+        "vlnv": "xilinx.com:module_ref:AND_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "Master_AND_gate_0_0",
+        "xci_path": "ip\\Master_AND_gate_0_0\\Master_AND_gate_0_0.xci",
+        "inst_hier_path": "AND_gate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AND_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "AND_gate_1": {
+        "vlnv": "xilinx.com:module_ref:AND_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "Master_AND_gate_0_1",
+        "xci_path": "ip\\Master_AND_gate_0_1\\Master_AND_gate_0_1.xci",
+        "inst_hier_path": "AND_gate_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AND_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "NOT_gate_1": {
+        "vlnv": "xilinx.com:module_ref:NOT_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "Master_NOT_gate_0_1",
+        "xci_path": "ip\\Master_NOT_gate_0_1\\Master_NOT_gate_0_1.xci",
+        "inst_hier_path": "NOT_gate_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "NOT_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "AND_gate_0_C": {
+        "ports": [
+          "AND_gate_0/C",
+          "NOT_gate_1/A"
+        ]
+      },
+      "AND_gate_1_C": {
+        "ports": [
+          "AND_gate_1/C",
+          "tx_mod_0/shift_load"
+        ]
+      },
+      "Chip_Select_0_CS": {
+        "ports": [
+          "Chip_Select_0/CS",
+          "CS",
+          "NOT_gate_0/A",
+          "shift_register_gener_0/chip_select"
+        ]
+      },
+      "MISO_1": {
+        "ports": [
+          "MISO",
+          "shift_register_gener_0/data"
+        ]
+      },
+      "NOT_gate_0_B": {
+        "ports": [
+          "NOT_gate_0/B",
+          "prescaler_0/en",
+          "AND_gate_0/B"
+        ]
+      },
+      "NOT_gate_1_B": {
+        "ports": [
+          "NOT_gate_1/B",
+          "SCLK"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "clock_div_0/clk",
+          "clock_div_1/clk"
+        ]
+      },
+      "clk_div_0_clk_div": {
+        "ports": [
+          "clock_div_1/clk_div",
+          "rx_mod_0/clk",
+          "tx_mod_0/clkfast"
+        ]
+      },
+      "clock_divider_0_clk_div": {
+        "ports": [
+          "clock_div_0/clk_div",
+          "shift_register_gener_0/sample",
+          "prescaler_0/sample",
+          "AND_gate_0/A",
+          "Chip_Select_0/SCLK"
+        ]
+      },
+      "latch_0_Q": {
+        "ports": [
+          "latch_0/Q",
+          "tx_mod_0/data_in"
+        ]
+      },
+      "prescaler_0_cnt": {
+        "ports": [
+          "prescaler_0/cnt",
+          "latch_0/cnt",
+          "AND_gate_1/A"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst",
+          "shift_register_gener_0/rst",
+          "latch_0/rst",
+          "rx_mod_0/rst",
+          "tx_mod_0/rst",
+          "clock_div_0/rst",
+          "clock_div_1/rst",
+          "prescaler_0/rst"
+        ]
+      },
+      "rx_mod_0_data_out": {
+        "ports": [
+          "rx_mod_0/data_out",
+          "shift_register_gener_0/register_in"
+        ]
+      },
+      "rx_mod_0_intr": {
+        "ports": [
+          "rx_mod_0/intr",
+          "Chip_Select_0/en"
+        ]
+      },
+      "shift_register_gener_0_carry_out": {
+        "ports": [
+          "shift_register_gener_0/carry_out",
+          "MOSI"
+        ]
+      },
+      "shift_register_gener_0_register_out": {
+        "ports": [
+          "shift_register_gener_0/register_out",
+          "latch_0/D"
+        ]
+      },
+      "sin_1": {
+        "ports": [
+          "sin",
+          "rx_mod_0/sin"
+        ]
+      },
+      "tx_mod_0_sout": {
+        "ports": [
+          "tx_mod_0/sout",
+          "sout"
+        ]
+      },
+      "tx_mod_0_xmitmt": {
+        "ports": [
+          "tx_mod_0/xmitmt",
+          "AND_gate_1/B"
+        ]
+      }
+    }
+  }
+}
