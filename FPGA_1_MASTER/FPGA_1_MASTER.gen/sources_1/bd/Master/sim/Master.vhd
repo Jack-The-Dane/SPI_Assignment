@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
---Date        : Wed May 15 16:21:33 2024
+--Date        : Fri May 17 11:05:23 2024
 --Host        : Cornelia running 64-bit major release  (build 9200)
 --Command     : generate_target Master.bd
 --Design      : Master
@@ -53,6 +53,7 @@ architecture STRUCTURE of Master is
   port (
     en : in STD_LOGIC;
     rst : in STD_LOGIC;
+    clk : in STD_LOGIC;
     sample : in STD_LOGIC;
     cnt : out STD_LOGIC
   );
@@ -131,7 +132,7 @@ architecture STRUCTURE of Master is
   signal NOT_gate_1_B : STD_LOGIC;
   signal clk_1 : STD_LOGIC;
   signal clk_div_0_clk_div : STD_LOGIC;
-  signal clock_divider_0_clk_div : STD_LOGIC;
+  signal clock_div_0_clk_div : STD_LOGIC;
   signal latch_0_Q : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal prescaler_0_cnt : STD_LOGIC;
   signal rst_0_1 : STD_LOGIC;
@@ -159,7 +160,7 @@ begin
   sout <= tx_mod_0_sout;
 AND_gate_0: component Master_AND_gate_0_0
      port map (
-      A => clock_divider_0_clk_div,
+      A => clock_div_0_clk_div,
       B => NOT_gate_0_B,
       C => AND_gate_0_C
     );
@@ -172,7 +173,7 @@ AND_gate_1: component Master_AND_gate_0_1
 Chip_Select_0: component Master_Chip_Select_0_0
      port map (
       CS => Chip_Select_0_CS,
-      SCLK => clock_divider_0_clk_div,
+      SCLK => clock_div_0_clk_div,
       en => rx_mod_0_intr
     );
 NOT_gate_0: component Master_NOT_gate_0_0
@@ -188,7 +189,7 @@ NOT_gate_1: component Master_NOT_gate_0_1
 clock_div_0: component Master_clock_div_0_0
      port map (
       clk => clk_1,
-      clk_div => clock_divider_0_clk_div,
+      clk_div => clock_div_0_clk_div,
       rst => rst_0_1
     );
 clock_div_1: component Master_clock_div_1_0
@@ -206,10 +207,11 @@ latch_0: component Master_latch_0_0
     );
 prescaler_0: component Master_prescaler_0_0
      port map (
+      clk => clk_1,
       cnt => prescaler_0_cnt,
       en => NOT_gate_0_B,
       rst => rst_0_1,
-      sample => clock_divider_0_clk_div
+      sample => AND_gate_0_C
     );
 rx_mod_0: component Master_rx_mod_0_0
      port map (
@@ -227,7 +229,7 @@ shift_register_gener_0: component Master_shift_register_gener_0_0
       register_in(7 downto 0) => rx_mod_0_data_out(7 downto 0),
       register_out(7 downto 0) => shift_register_gener_0_register_out(7 downto 0),
       rst => rst_0_1,
-      sample => clock_divider_0_clk_div
+      sample => AND_gate_0_C
     );
 tx_mod_0: component Master_tx_mod_0_0
      port map (

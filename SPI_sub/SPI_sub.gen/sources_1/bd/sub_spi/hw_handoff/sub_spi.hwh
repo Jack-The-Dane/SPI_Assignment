@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May 15 15:42:29 2024" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri May 17 13:59:16 2024" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="sub_spi" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -26,22 +26,22 @@
     </PORT>
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="SCLK_rising_edge_detector" PORT="clk"/>
-        <CONNECTION INSTANCE="SCLK_falling_edge_detector" PORT="clk"/>
+        <CONNECTION INSTANCE="clock_div_0" PORT="clk"/>
+        <CONNECTION INSTANCE="SPI_sub" PORT="clk"/>
         <CONNECTION INSTANCE="MOSI_synchronizer" PORT="clk"/>
         <CONNECTION INSTANCE="SCLK_synchronizer" PORT="clk"/>
         <CONNECTION INSTANCE="CS_synchronizer" PORT="clk"/>
-        <CONNECTION INSTANCE="clock_div_0" PORT="clk"/>
+        <CONNECTION INSTANCE="SCLK_rising_edge_detector" PORT="clk"/>
+        <CONNECTION INSTANCE="SCLK_falling_edge_detector" PORT="clk"/>
         <CONNECTION INSTANCE="sin_synchronizer" PORT="clk"/>
-        <CONNECTION INSTANCE="SPI_sub" PORT="clk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
       <CONNECTIONS>
         <CONNECTION INSTANCE="clock_div_0" PORT="rst"/>
-        <CONNECTION INSTANCE="tx_mod_0" PORT="rst"/>
         <CONNECTION INSTANCE="rx_mod_0" PORT="rst"/>
         <CONNECTION INSTANCE="SPI_sub" PORT="rst"/>
+        <CONNECTION INSTANCE="tx_mod_0" PORT="rst"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="sin" SIGIS="undef" SIGNAME="External_Ports_sin">
@@ -66,9 +66,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="SPI_sub_transmission_done">
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="latch_0_Q">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="SPI_sub" PORT="transmission_done"/>
+            <CONNECTION INSTANCE="latch_0" PORT="Q"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="tx_mod_0_xmitmt">
@@ -268,7 +268,7 @@
         </PORT>
         <PORT DIR="O" NAME="transmission_done" SIGIS="undef" SIGNAME="SPI_sub_transmission_done">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="AND_gate_0" PORT="A"/>
+            <CONNECTION INSTANCE="latch_0" PORT="D"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -290,13 +290,39 @@
         </PORT>
         <PORT DIR="O" NAME="clk_div" SIGIS="undef" SIGNAME="clock_div_0_clk_div">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="tx_mod_0" PORT="clkfast"/>
             <CONNECTION INSTANCE="rx_mod_0" PORT="clk"/>
+            <CONNECTION INSTANCE="tx_mod_0" PORT="clkfast"/>
+            <CONNECTION INSTANCE="latch_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/latch_0" HWVERSION="1.0" INSTANCE="latch_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="latch" VLNV="xilinx.com:module_ref:latch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="sub_spi_latch_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="D" SIGIS="undef" SIGNAME="SPI_sub_transmission_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SPI_sub" PORT="transmission_done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Q" SIGIS="undef" SIGNAME="latch_0_Q">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AND_gate_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clock_div_0_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_div_0" PORT="clk_div"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

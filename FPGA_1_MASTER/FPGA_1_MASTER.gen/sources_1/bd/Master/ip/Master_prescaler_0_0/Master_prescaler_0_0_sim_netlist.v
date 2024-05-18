@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Tue May 14 12:31:52 2024
+// Date        : Fri May 17 11:12:26 2024
 // Host        : Cornelia running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim {c:/Users/Corne/Documents/MEGA/4.
-//               Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_prescaler_0_0/Master_prescaler_0_0_sim_netlist.v}
+//               Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_prescaler_0_0/Master_prescaler_0_0_sim_netlist.v}
 // Design      : Master_prescaler_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -19,10 +19,12 @@
 module Master_prescaler_0_0
    (en,
     rst,
+    clk,
     sample,
     cnt);
   input en;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 rst RST" *) (* x_interface_parameter = "XIL_INTERFACENAME rst, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input rst;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Master_clk, INSERT_VIP 0" *) input clk;
   input sample;
   output cnt;
 

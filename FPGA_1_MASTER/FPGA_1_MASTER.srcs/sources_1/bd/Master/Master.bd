@@ -194,6 +194,20 @@
             "type": "rst",
             "direction": "I"
           },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "Master_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
           "sample": {
             "direction": "I"
           },
@@ -497,7 +511,9 @@
       "AND_gate_0_C": {
         "ports": [
           "AND_gate_0/C",
-          "NOT_gate_1/A"
+          "NOT_gate_1/A",
+          "shift_register_gener_0/sample",
+          "prescaler_0/sample"
         ]
       },
       "AND_gate_1_C": {
@@ -523,8 +539,8 @@
       "NOT_gate_0_B": {
         "ports": [
           "NOT_gate_0/B",
-          "prescaler_0/en",
-          "AND_gate_0/B"
+          "AND_gate_0/B",
+          "prescaler_0/en"
         ]
       },
       "NOT_gate_1_B": {
@@ -537,7 +553,8 @@
         "ports": [
           "clk",
           "clock_div_0/clk",
-          "clock_div_1/clk"
+          "clock_div_1/clk",
+          "prescaler_0/clk"
         ]
       },
       "clk_div_0_clk_div": {
@@ -547,13 +564,11 @@
           "tx_mod_0/clkfast"
         ]
       },
-      "clock_divider_0_clk_div": {
+      "clock_div_0_clk_div": {
         "ports": [
           "clock_div_0/clk_div",
-          "shift_register_gener_0/sample",
-          "prescaler_0/sample",
-          "AND_gate_0/A",
-          "Chip_Select_0/SCLK"
+          "Chip_Select_0/SCLK",
+          "AND_gate_0/A"
         ]
       },
       "latch_0_Q": {

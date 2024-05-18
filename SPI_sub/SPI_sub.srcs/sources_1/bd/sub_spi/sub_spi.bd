@@ -21,7 +21,8 @@
       "clock_div_0": "",
       "rx_mod_0": "",
       "sin_synchronizer": "",
-      "AND_gate_0": ""
+      "AND_gate_0": "",
+      "latch_0": ""
     },
     "ports": {
       "MISO": {
@@ -92,7 +93,7 @@
         "vlnv": "xilinx.com:module_ref:fsm_template:1.0",
         "ip_revision": "1",
         "xci_name": "sub_spi_fsm_template_0_0",
-        "xci_path": "ip/sub_spi_fsm_template_0_0/sub_spi_fsm_template_0_0.xci",
+        "xci_path": "ip\\sub_spi_fsm_template_0_0\\sub_spi_fsm_template_0_0.xci",
         "inst_hier_path": "SPI_sub",
         "parameters": {
           "n_bits": {
@@ -157,7 +158,7 @@
         "vlnv": "xilinx.com:module_ref:synchronizer:1.0",
         "ip_revision": "1",
         "xci_name": "sub_spi_synchronizer_0_0",
-        "xci_path": "ip/sub_spi_synchronizer_0_0/sub_spi_synchronizer_0_0.xci",
+        "xci_path": "ip\\sub_spi_synchronizer_0_0\\sub_spi_synchronizer_0_0.xci",
         "inst_hier_path": "MOSI_synchronizer",
         "reference_info": {
           "ref_type": "hdl",
@@ -187,7 +188,7 @@
         "vlnv": "xilinx.com:module_ref:synchronizer:1.0",
         "ip_revision": "1",
         "xci_name": "sub_spi_synchronizer_0_1",
-        "xci_path": "ip/sub_spi_synchronizer_0_1/sub_spi_synchronizer_0_1.xci",
+        "xci_path": "ip\\sub_spi_synchronizer_0_1\\sub_spi_synchronizer_0_1.xci",
         "inst_hier_path": "SCLK_synchronizer",
         "reference_info": {
           "ref_type": "hdl",
@@ -217,7 +218,7 @@
         "vlnv": "xilinx.com:module_ref:synchronizer:1.0",
         "ip_revision": "1",
         "xci_name": "sub_spi_synchronizer_0_2",
-        "xci_path": "ip/sub_spi_synchronizer_0_2/sub_spi_synchronizer_0_2.xci",
+        "xci_path": "ip\\sub_spi_synchronizer_0_2\\sub_spi_synchronizer_0_2.xci",
         "inst_hier_path": "CS_synchronizer",
         "reference_info": {
           "ref_type": "hdl",
@@ -247,7 +248,7 @@
         "vlnv": "xilinx.com:module_ref:Rising_edge_detector:1.0",
         "ip_revision": "1",
         "xci_name": "sub_spi_Rising_edge_detector_0_0",
-        "xci_path": "ip/sub_spi_Rising_edge_detector_0_0/sub_spi_Rising_edge_detector_0_0.xci",
+        "xci_path": "ip\\sub_spi_Rising_edge_detector_0_0\\sub_spi_Rising_edge_detector_0_0.xci",
         "inst_hier_path": "SCLK_rising_edge_detector",
         "reference_info": {
           "ref_type": "hdl",
@@ -277,7 +278,7 @@
         "vlnv": "xilinx.com:module_ref:Falling_edge_detector:1.0",
         "ip_revision": "1",
         "xci_name": "sub_spi_Falling_edge_detector_0_0",
-        "xci_path": "ip/sub_spi_Falling_edge_detector_0_0/sub_spi_Falling_edge_detector_0_0.xci",
+        "xci_path": "ip\\sub_spi_Falling_edge_detector_0_0\\sub_spi_Falling_edge_detector_0_0.xci",
         "inst_hier_path": "SCLK_falling_edge_detector",
         "reference_info": {
           "ref_type": "hdl",
@@ -307,7 +308,7 @@
         "vlnv": "xilinx.com:module_ref:tx_mod:1.0",
         "ip_revision": "1",
         "xci_name": "sub_spi_tx_mod_0_0",
-        "xci_path": "ip/sub_spi_tx_mod_0_0/sub_spi_tx_mod_0_0.xci",
+        "xci_path": "ip\\sub_spi_tx_mod_0_0\\sub_spi_tx_mod_0_0.xci",
         "inst_hier_path": "tx_mod_0",
         "reference_info": {
           "ref_type": "hdl",
@@ -342,7 +343,7 @@
         "vlnv": "xilinx.com:module_ref:clock_div:1.0",
         "ip_revision": "1",
         "xci_name": "sub_spi_clock_div_0_0",
-        "xci_path": "ip/sub_spi_clock_div_0_0/sub_spi_clock_div_0_0.xci",
+        "xci_path": "ip\\sub_spi_clock_div_0_0\\sub_spi_clock_div_0_0.xci",
         "inst_hier_path": "clock_div_0",
         "parameters": {
           "half_val": {
@@ -385,7 +386,7 @@
         "vlnv": "xilinx.com:module_ref:rx_mod:1.0",
         "ip_revision": "1",
         "xci_name": "sub_spi_rx_mod_0_0",
-        "xci_path": "ip/sub_spi_rx_mod_0_0/sub_spi_rx_mod_0_0.xci",
+        "xci_path": "ip\\sub_spi_rx_mod_0_0\\sub_spi_rx_mod_0_0.xci",
         "inst_hier_path": "rx_mod_0",
         "reference_info": {
           "ref_type": "hdl",
@@ -431,7 +432,7 @@
         "vlnv": "xilinx.com:module_ref:synchronizer:1.0",
         "ip_revision": "1",
         "xci_name": "sub_spi_synchronizer_0_3",
-        "xci_path": "ip/sub_spi_synchronizer_0_3/sub_spi_synchronizer_0_3.xci",
+        "xci_path": "ip\\sub_spi_synchronizer_0_3\\sub_spi_synchronizer_0_3.xci",
         "inst_hier_path": "sin_synchronizer",
         "reference_info": {
           "ref_type": "hdl",
@@ -461,7 +462,7 @@
         "vlnv": "xilinx.com:module_ref:AND_gate:1.0",
         "ip_revision": "1",
         "xci_name": "sub_spi_AND_gate_0_0",
-        "xci_path": "ip/sub_spi_AND_gate_0_0/sub_spi_AND_gate_0_0.xci",
+        "xci_path": "ip\\sub_spi_AND_gate_0_0\\sub_spi_AND_gate_0_0.xci",
         "inst_hier_path": "AND_gate_0",
         "reference_info": {
           "ref_type": "hdl",
@@ -476,6 +477,30 @@
             "direction": "I"
           },
           "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "latch_0": {
+        "vlnv": "xilinx.com:module_ref:latch:1.0",
+        "ip_revision": "1",
+        "xci_name": "sub_spi_latch_0_0",
+        "xci_path": "ip\\sub_spi_latch_0_0\\sub_spi_latch_0_0.xci",
+        "inst_hier_path": "latch_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I"
+          },
+          "Q": {
             "direction": "O"
           }
         }
@@ -546,27 +571,28 @@
       "SPI_sub_transmission_done": {
         "ports": [
           "SPI_sub/transmission_done",
-          "AND_gate_0/A"
+          "latch_0/D"
         ]
       },
       "clk_0_1": {
         "ports": [
           "clk",
-          "SCLK_rising_edge_detector/clk",
-          "SCLK_falling_edge_detector/clk",
+          "clock_div_0/clk",
+          "SPI_sub/clk",
           "MOSI_synchronizer/clk",
           "SCLK_synchronizer/clk",
           "CS_synchronizer/clk",
-          "clock_div_0/clk",
-          "sin_synchronizer/clk",
-          "SPI_sub/clk"
+          "SCLK_rising_edge_detector/clk",
+          "SCLK_falling_edge_detector/clk",
+          "sin_synchronizer/clk"
         ]
       },
       "clock_div_0_clk_div": {
         "ports": [
           "clock_div_0/clk_div",
+          "rx_mod_0/clk",
           "tx_mod_0/clkfast",
-          "rx_mod_0/clk"
+          "latch_0/clk"
         ]
       },
       "fsm_template_0_MISO": {
@@ -575,13 +601,19 @@
           "MISO"
         ]
       },
+      "latch_0_Q": {
+        "ports": [
+          "latch_0/Q",
+          "AND_gate_0/A"
+        ]
+      },
       "rst_0_1": {
         "ports": [
           "rst",
           "clock_div_0/rst",
-          "tx_mod_0/rst",
           "rx_mod_0/rst",
-          "SPI_sub/rst"
+          "SPI_sub/rst",
+          "tx_mod_0/rst"
         ]
       },
       "rx_mod_0_data_out": {

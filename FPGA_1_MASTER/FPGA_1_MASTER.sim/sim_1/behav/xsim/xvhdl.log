@@ -1,8 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.srcs/sources_1/new/Chip_Select.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Chip_Select'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.ip_user_files/bd/Master/ip/Master_Chip_Select_0_0/sim/Master_Chip_Select_0_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Master_Chip_Select_0_0'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.ip_user_files/bd/Master/sim/Master.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Master'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/hdl/Master_wrapper.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Master_wrapper'

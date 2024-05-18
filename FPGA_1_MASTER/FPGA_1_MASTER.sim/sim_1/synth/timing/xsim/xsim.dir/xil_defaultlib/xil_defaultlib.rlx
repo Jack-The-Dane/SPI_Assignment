@@ -1,0 +1,6 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.sim/sim_1/synth/timing/xsim/SPI_M_tb_time_synth.v,1715937395,verilog,,,,Master;Master_AND_gate_0_0;Master_AND_gate_0_1;Master_Chip_Select_0_0;Master_NOT_gate_0_0;Master_NOT_gate_0_1;Master_clock_div_0_0;Master_clock_div_0_0_clock_div;Master_clock_div_1_0;Master_clock_div_1_0_clock_div;Master_latch_0_0;Master_latch_0_0_latch;Master_prescaler_0_0;Master_prescaler_0_0_prescaler;Master_rx_mod_0_0;Master_rx_mod_0_0_rx_mod;Master_shift_register_gener_0_0;Master_shift_register_gener_0_0_shift_register_generic;Master_tx_mod_0_0;Master_tx_mod_0_0_tx_mod;Master_wrapper;glbl,,,,,,,,
+C:/Users/Corne/Documents/MEGA/4. Semester/Semesterprojekt/SPI_MASTER_tb.vhd,1715937363,vhdl,,,,spi_m_tb,,,,,,,,

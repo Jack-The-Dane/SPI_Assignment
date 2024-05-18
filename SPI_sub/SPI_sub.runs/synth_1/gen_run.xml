@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1715781572" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/sub_spi_wrapper.dcp">
-  <File Type="VDS-TIMING-PB" Name="sub_spi_wrapper_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="sub_spi_wrapper_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="sub_spi_wrapper.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="sub_spi_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="sub_spi_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="sub_spi_wrapper_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="sub_spi_wrapper.vds"/>
-  <File Type="REPORTS-TCL" Name="sub_spi_wrapper_reports.tcl"/>
   <File Type="PA-TCL" Name="sub_spi_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="sub_spi_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="sub_spi_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="sub_spi_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="sub_spi_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="sub_spi_wrapper.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/fsm_template.vhd">
@@ -141,13 +138,13 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="sub_spi_AND_gate_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sub_spi_synchronizer_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="sub_spi_fsm_template_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sub_spi_rx_mod_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="uart_loop_uart_loop_mod_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="sub_spi_clock_div_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="sub_spi_tx_mod_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="sub_spi_synchronizer_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="sub_spi_rx_mod_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="sub_spi_synchronizer_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="sub_spi_tx_mod_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="sub_spi_synchronizer_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="sub_spi_Rising_edge_detector_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="sub_spi_Falling_edge_detector_0_0"/>

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Wed May 15 16:23:05 2024
+| Date         : Fri May 17 11:13:29 2024
 | Host         : Cornelia running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Master_wrapper_control_sets_placed.rpt
 | Design       : Master_wrapper
@@ -76,11 +76,11 @@ Table of Contents
 | ~Master_i/clock_div_0/U0/clk_div |                                         |                  |                1 |              1 |         1.00 |
 |  clk_IBUF                        |                                         |                  |                1 |              2 |         2.00 |
 |  Master_i/clock_div_1/U0/clk_div |                                         | rst_IBUF         |                2 |              3 |         1.50 |
-|  Master_i/clock_div_1/U0/clk_div | Master_i/tx_mod_0/U0/count              | rst_IBUF         |                2 |              4 |         2.00 |
 |  Master_i/clock_div_1/U0/clk_div | Master_i/tx_mod_0/U0/cnt_bit[3]_i_1_n_0 | rst_IBUF         |                1 |              4 |         4.00 |
+|  Master_i/clock_div_1/U0/clk_div | Master_i/tx_mod_0/U0/count              | rst_IBUF         |                2 |              4 |         2.00 |
 |  Master_i/clock_div_0/U0/clk_div |                                         | rst_IBUF         |                2 |              7 |         3.50 |
-|  Master_i/prescaler_0/U0/cnt     |                                         |                  |                1 |              8 |         8.00 |
 |  Master_i/clock_div_0/U0/clk_div |                                         |                  |                1 |              8 |         8.00 |
+|  Master_i/prescaler_0/U0/cnt     |                                         |                  |                1 |              8 |         8.00 |
 |  Master_i/clock_div_1/U0/clk_div | Master_i/tx_mod_0/U0/reg_data           | rst_IBUF         |                2 |             10 |         5.00 |
 |  clk_IBUF                        |                                         | rst_IBUF         |                8 |             23 |         2.88 |
 +----------------------------------+-----------------------------------------+------------------+------------------+----------------+--------------+

@@ -1,14 +1,14 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../../../Semesterprojekt/Semesterprojekt_4/FPGA_projekt/FPGA_projekt.srcs/sources_1/new/shift_register_generic.vhd" \
-"../../../../../../Semesterprojekt/Semesterprojekt_4/FPGA_projekt/FPGA_projekt.srcs/sources_1/new/latch.vhd" \
-"../../../../../../Semesterprojekt/Semesterprojekt_4/FPGA_projekt/FPGA_projekt.srcs/sources_1/new/enable_counter.vhd" \
+"../../../../../../../Semesterprojekt/Semesterprojekt_4/FPGA_projekt/FPGA_projekt.srcs/sources_1/new/shift_register_generic.vhd" \
+"../../../../../../../Semesterprojekt/Semesterprojekt_4/FPGA_projekt/FPGA_projekt.srcs/sources_1/new/latch.vhd" \
+"../../../../../../../Semesterprojekt/Semesterprojekt_4/FPGA_projekt/FPGA_projekt.srcs/sources_1/new/enable_counter.vhd" \
 "../../../../FPGA_1_MASTER.srcs/sources_1/new/Chip_Select.vhd" \
-"../../../../../../Semesterprojekt/Semesterprojekt_4/FPGA_projekt/FPGA_projekt.srcs/sources_1/new/NOT_gate.vhd" \
-"../../../../../rx_mod_rtl.vhd" \
-"../../../../../tx_mod_fsm.vhd" \
-"../../../../../../Semesterprojekt/Semesterprojekt_4/FPGA_projekt/FPGA_projekt.srcs/sources_1/new/clock_divider.vhd" \
-"../../../../../../Semesterprojekt/Semesterprojekt_4/FPGA_projekt/FPGA_projekt.srcs/sources_1/new/AND_gate.vhd" \
+"../../../../../../../Semesterprojekt/Semesterprojekt_4/FPGA_projekt/FPGA_projekt.srcs/sources_1/new/NOT_gate.vhd" \
+"../../../../../../rx_mod_rtl.vhd" \
+"../../../../../../tx_mod_fsm.vhd" \
+"../../../../../../../Semesterprojekt/Semesterprojekt_4/FPGA_projekt/FPGA_projekt.srcs/sources_1/new/clock_divider.vhd" \
+"../../../../../../../Semesterprojekt/Semesterprojekt_4/FPGA_projekt/FPGA_projekt.srcs/sources_1/new/AND_gate.vhd" \
 "../../../../FPGA_1_MASTER.ip_user_files/bd/Master/ip/Master_shift_register_gener_0_0/sim/Master_shift_register_gener_0_0.vhd" \
 "../../../../FPGA_1_MASTER.ip_user_files/bd/Master/ip/Master_latch_0_0/sim/Master_latch_0_0.vhd" \
 "../../../../FPGA_1_MASTER.ip_user_files/bd/Master/ip/Master_prescaler_0_0/sim/Master_prescaler_0_0.vhd" \
@@ -23,7 +23,7 @@ vhdl xil_defaultlib  \
 "../../../../FPGA_1_MASTER.ip_user_files/bd/Master/ip/Master_NOT_gate_0_1/sim/Master_NOT_gate_0_1.vhd" \
 "../../../../FPGA_1_MASTER.ip_user_files/bd/Master/sim/Master.vhd" \
 "../../../../FPGA_1_MASTER.gen/sources_1/bd/Master/hdl/Master_wrapper.vhd" \
-"../../../../../../Semesterprojekt/SPI_MASTER_tb.vhd" \
+"../../../../../../../Semesterprojekt/SPI_MASTER_tb.vhd" \
 
 # Do not sort compile order
 nosort

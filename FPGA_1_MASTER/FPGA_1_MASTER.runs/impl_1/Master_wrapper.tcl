@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/impl_1/Master_wrapper.tcl"
+  variable script "C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/impl_1/Master_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -132,19 +132,19 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir {C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet {{C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/Master_wrapper.dcp}}
+  add_files -quiet {{C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/Master_wrapper.dcp}}
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files {{C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.srcs/sources_1/bd/Master/Master.bd}}
+  add_files {{C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.srcs/sources_1/bd/Master/Master.bd}}
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc {{C:/Users/Corne/Documents/MEGA/4. Semester/Digital/PYNQ-Z2_v1.0.xdc}}
+  read_xdc {{C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

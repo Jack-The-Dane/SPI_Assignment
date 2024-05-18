@@ -1,9 +1,0 @@
-{
-	"version": "1.0",
-	"modules": {
-		"uart_loop": {
-			"proto_instances": {
-			}
-		}
-	}
-}

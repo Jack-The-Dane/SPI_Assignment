@@ -1,16 +1,16 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-//Date        : Wed May 15 15:42:28 2024
-//Host        : Laptop running 64-bit Ubuntu 22.04.4 LTS
+//Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+//Date        : Fri May 17 13:59:15 2024
+//Host        : Cornelia running 64-bit major release  (build 9200)
 //Command     : generate_target sub_spi.bd
 //Design      : sub_spi
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "sub_spi,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=sub_spi,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=11,numReposBlks=11,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=11,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "sub_spi.hwdef" *) 
+(* CORE_GENERATION_INFO = "sub_spi,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=sub_spi,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=12,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=12,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "sub_spi.hwdef" *) 
 module sub_spi
    (CS,
     MISO,
@@ -43,6 +43,7 @@ module sub_spi
   wire clk_0_1;
   wire clock_div_0_clk_div;
   wire fsm_template_0_MISO;
+  wire latch_0_Q;
   wire rst_0_1;
   wire [7:0]rx_mod_0_data_out;
   wire sin_1;
@@ -59,7 +60,7 @@ module sub_spi
   assign sin_1 = sin;
   assign sout = tx_mod_0_sout;
   sub_spi_AND_gate_0_0 AND_gate_0
-       (.A(SPI_sub_transmission_done),
+       (.A(latch_0_Q),
         .B(tx_mod_0_xmitmt),
         .C(AND_gate_0_C));
   sub_spi_synchronizer_0_2 CS_synchronizer
@@ -97,6 +98,10 @@ module sub_spi
        (.clk(clk_0_1),
         .clk_div(clock_div_0_clk_div),
         .rst(rst_0_1));
+  sub_spi_latch_0_0 latch_0
+       (.D(SPI_sub_transmission_done),
+        .Q(latch_0_Q),
+        .clk(clock_div_0_clk_div));
   sub_spi_rx_mod_0_0 rx_mod_0
        (.clk(clock_div_0_clk_div),
         .data_out(rx_mod_0_data_out),

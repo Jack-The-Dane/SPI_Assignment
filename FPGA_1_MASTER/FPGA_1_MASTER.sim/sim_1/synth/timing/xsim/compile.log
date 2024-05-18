@@ -1,0 +1,25 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.sim/sim_1/synth/timing/xsim/SPI_M_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Master
+INFO: [VRFC 10-311] analyzing module Master_AND_gate_0_0
+INFO: [VRFC 10-311] analyzing module Master_AND_gate_0_1
+INFO: [VRFC 10-311] analyzing module Master_Chip_Select_0_0
+INFO: [VRFC 10-311] analyzing module Master_NOT_gate_0_0
+INFO: [VRFC 10-311] analyzing module Master_NOT_gate_0_1
+INFO: [VRFC 10-311] analyzing module Master_clock_div_0_0
+INFO: [VRFC 10-311] analyzing module Master_clock_div_0_0_clock_div
+INFO: [VRFC 10-311] analyzing module Master_clock_div_1_0
+INFO: [VRFC 10-311] analyzing module Master_clock_div_1_0_clock_div
+INFO: [VRFC 10-311] analyzing module Master_latch_0_0
+INFO: [VRFC 10-311] analyzing module Master_latch_0_0_latch
+INFO: [VRFC 10-311] analyzing module Master_prescaler_0_0
+INFO: [VRFC 10-311] analyzing module Master_prescaler_0_0_prescaler
+INFO: [VRFC 10-311] analyzing module Master_rx_mod_0_0
+INFO: [VRFC 10-311] analyzing module Master_rx_mod_0_0_rx_mod
+INFO: [VRFC 10-311] analyzing module Master_shift_register_gener_0_0
+INFO: [VRFC 10-311] analyzing module Master_shift_register_gener_0_0_shift_register_generic
+INFO: [VRFC 10-311] analyzing module Master_tx_mod_0_0
+INFO: [VRFC 10-311] analyzing module Master_tx_mod_0_0_tx_mod
+INFO: [VRFC 10-311] analyzing module Master_wrapper
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Corne/Documents/MEGA/4. Semester/Semesterprojekt/SPI_MASTER_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SPI_M_tb'

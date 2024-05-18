@@ -3,20 +3,20 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Wed May 15 16:22:06 2024
-# Process ID: 8208
-# Current directory: C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1
+# Start of session at: Fri May 17 11:12:29 2024
+# Process ID: 18088
+# Current directory: C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1
 # Command line: vivado.exe -log Master_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Master_wrapper.tcl
-# Log file: C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/Master_wrapper.vds
-# Journal file: C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1\vivado.jou
+# Log file: C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/Master_wrapper.vds
+# Journal file: C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1\vivado.jou
 # Running On: Cornelia, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 12, Host memory: 16890 MB
 #-----------------------------------------------------------
 source Master_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
-Command: read_checkpoint -auto_incremental -incremental {C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.srcs/utils_1/imports/synth_1/Master_wrapper.dcp}
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.srcs/utils_1/imports/synth_1/Master_wrapper.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.srcs/utils_1/imports/synth_1/Master_wrapper.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.srcs/utils_1/imports/synth_1/Master_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top Master_wrapper -part xc7z020clg400-1
 Starting synth_design
@@ -27,106 +27,110 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 32168
+INFO: [Synth 8-7075] Helper process launched with PID 17744
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1349.445 ; gain = 440.836
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1349.559 ; gain = 440.812
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Master_wrapper' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/hdl/Master_wrapper.vhd:28]
-INFO: [Synth 8-3491] module 'Master' declared at 'c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:15' bound to instance 'Master_i' of component 'Master' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/hdl/Master_wrapper.vhd:42]
-INFO: [Synth 8-638] synthesizing module 'Master' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:32]
-INFO: [Synth 8-3491] module 'Master_AND_gate_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_AND_gate_0_0_stub.vhdl:6' bound to instance 'AND_gate_0' of component 'Master_AND_gate_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:160]
-INFO: [Synth 8-638] synthesizing module 'Master_AND_gate_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_AND_gate_0_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Master_AND_gate_0_1' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_AND_gate_0_1_stub.vhdl:6' bound to instance 'AND_gate_1' of component 'Master_AND_gate_0_1' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:166]
-INFO: [Synth 8-638] synthesizing module 'Master_AND_gate_0_1' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_AND_gate_0_1_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Master_Chip_Select_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_Chip_Select_0_0_stub.vhdl:6' bound to instance 'Chip_Select_0' of component 'Master_Chip_Select_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:172]
-INFO: [Synth 8-638] synthesizing module 'Master_Chip_Select_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_Chip_Select_0_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Master_NOT_gate_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_NOT_gate_0_0_stub.vhdl:6' bound to instance 'NOT_gate_0' of component 'Master_NOT_gate_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:178]
-INFO: [Synth 8-638] synthesizing module 'Master_NOT_gate_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_NOT_gate_0_0_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'Master_NOT_gate_0_1' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_NOT_gate_0_1_stub.vhdl:6' bound to instance 'NOT_gate_1' of component 'Master_NOT_gate_0_1' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:183]
-INFO: [Synth 8-638] synthesizing module 'Master_NOT_gate_0_1' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_NOT_gate_0_1_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'Master_clock_div_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_clock_div_0_0_stub.vhdl:6' bound to instance 'clock_div_0' of component 'Master_clock_div_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:188]
-INFO: [Synth 8-638] synthesizing module 'Master_clock_div_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_clock_div_0_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Master_clock_div_1_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_clock_div_1_0_stub.vhdl:6' bound to instance 'clock_div_1' of component 'Master_clock_div_1_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:194]
-INFO: [Synth 8-638] synthesizing module 'Master_clock_div_1_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_clock_div_1_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Master_latch_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_latch_0_0_stub.vhdl:6' bound to instance 'latch_0' of component 'Master_latch_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:200]
-INFO: [Synth 8-638] synthesizing module 'Master_latch_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_latch_0_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'Master_prescaler_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_prescaler_0_0_stub.vhdl:6' bound to instance 'prescaler_0' of component 'Master_prescaler_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:207]
-INFO: [Synth 8-638] synthesizing module 'Master_prescaler_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_prescaler_0_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'Master_rx_mod_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_rx_mod_0_0_stub.vhdl:6' bound to instance 'rx_mod_0' of component 'Master_rx_mod_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:214]
-INFO: [Synth 8-638] synthesizing module 'Master_rx_mod_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_rx_mod_0_0_stub.vhdl:17]
-INFO: [Synth 8-3491] module 'Master_shift_register_gener_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_shift_register_gener_0_0_stub.vhdl:6' bound to instance 'shift_register_gener_0' of component 'Master_shift_register_gener_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:222]
-INFO: [Synth 8-638] synthesizing module 'Master_shift_register_gener_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_shift_register_gener_0_0_stub.vhdl:19]
-INFO: [Synth 8-3491] module 'Master_tx_mod_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_tx_mod_0_0_stub.vhdl:6' bound to instance 'tx_mod_0' of component 'Master_tx_mod_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:232]
-INFO: [Synth 8-638] synthesizing module 'Master_tx_mod_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-8208-Cornelia/realtime/Master_tx_mod_0_0_stub.vhdl:18]
-INFO: [Synth 8-256] done synthesizing module 'Master' (0#1) [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'Master_wrapper' (0#1) [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/hdl/Master_wrapper.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'Master_wrapper' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/hdl/Master_wrapper.vhd:28]
+INFO: [Synth 8-3491] module 'Master' declared at 'c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:15' bound to instance 'Master_i' of component 'Master' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/hdl/Master_wrapper.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'Master' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:32]
+INFO: [Synth 8-3491] module 'Master_AND_gate_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_AND_gate_0_0_stub.vhdl:6' bound to instance 'AND_gate_0' of component 'Master_AND_gate_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'Master_AND_gate_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_AND_gate_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Master_AND_gate_0_1' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_AND_gate_0_1_stub.vhdl:6' bound to instance 'AND_gate_1' of component 'Master_AND_gate_0_1' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'Master_AND_gate_0_1' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_AND_gate_0_1_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Master_Chip_Select_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_Chip_Select_0_0_stub.vhdl:6' bound to instance 'Chip_Select_0' of component 'Master_Chip_Select_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'Master_Chip_Select_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_Chip_Select_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Master_NOT_gate_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_NOT_gate_0_0_stub.vhdl:6' bound to instance 'NOT_gate_0' of component 'Master_NOT_gate_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'Master_NOT_gate_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_NOT_gate_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'Master_NOT_gate_0_1' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_NOT_gate_0_1_stub.vhdl:6' bound to instance 'NOT_gate_1' of component 'Master_NOT_gate_0_1' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'Master_NOT_gate_0_1' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_NOT_gate_0_1_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'Master_clock_div_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_clock_div_0_0_stub.vhdl:6' bound to instance 'clock_div_0' of component 'Master_clock_div_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'Master_clock_div_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_clock_div_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Master_clock_div_1_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_clock_div_1_0_stub.vhdl:6' bound to instance 'clock_div_1' of component 'Master_clock_div_1_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:195]
+INFO: [Synth 8-638] synthesizing module 'Master_clock_div_1_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_clock_div_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Master_latch_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_latch_0_0_stub.vhdl:6' bound to instance 'latch_0' of component 'Master_latch_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'Master_latch_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_latch_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'Master_prescaler_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_prescaler_0_0_stub.vhdl:6' bound to instance 'prescaler_0' of component 'Master_prescaler_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:208]
+INFO: [Synth 8-638] synthesizing module 'Master_prescaler_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_prescaler_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'Master_rx_mod_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_rx_mod_0_0_stub.vhdl:6' bound to instance 'rx_mod_0' of component 'Master_rx_mod_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'Master_rx_mod_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_rx_mod_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'Master_shift_register_gener_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_shift_register_gener_0_0_stub.vhdl:6' bound to instance 'shift_register_gener_0' of component 'Master_shift_register_gener_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'Master_shift_register_gener_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_shift_register_gener_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'Master_tx_mod_0_0' declared at 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_tx_mod_0_0_stub.vhdl:6' bound to instance 'tx_mod_0' of component 'Master_tx_mod_0_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'Master_tx_mod_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/.Xil/Vivado-18088-Cornelia/realtime/Master_tx_mod_0_0_stub.vhdl:18]
+INFO: [Synth 8-256] done synthesizing module 'Master' (0#1) [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/synth/Master.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'Master_wrapper' (0#1) [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/hdl/Master_wrapper.vhd:28]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1455.809 ; gain = 547.062
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1455.809 ; gain = 547.062
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1455.809 ; gain = 547.062
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1455.742 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1455.809 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_shift_register_gener_0_0/Master_shift_register_gener_0_0/Master_shift_register_gener_0_0_in_context.xdc] for cell 'Master_i/shift_register_gener_0'
-Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_shift_register_gener_0_0/Master_shift_register_gener_0_0/Master_shift_register_gener_0_0_in_context.xdc] for cell 'Master_i/shift_register_gener_0'
-Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_latch_0_0/Master_latch_0_0/Master_latch_0_0_in_context.xdc] for cell 'Master_i/latch_0'
-Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_latch_0_0/Master_latch_0_0/Master_latch_0_0_in_context.xdc] for cell 'Master_i/latch_0'
-Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_prescaler_0_0/Master_prescaler_0_0/Master_prescaler_0_0_in_context.xdc] for cell 'Master_i/prescaler_0'
-Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_prescaler_0_0/Master_prescaler_0_0/Master_prescaler_0_0_in_context.xdc] for cell 'Master_i/prescaler_0'
-Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_Chip_Select_0_0/Master_Chip_Select_0_0/Master_Chip_Select_0_0_in_context.xdc] for cell 'Master_i/Chip_Select_0'
-Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_Chip_Select_0_0/Master_Chip_Select_0_0/Master_Chip_Select_0_0_in_context.xdc] for cell 'Master_i/Chip_Select_0'
-Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_NOT_gate_0_0/Master_NOT_gate_0_0/Master_NOT_gate_0_0_in_context.xdc] for cell 'Master_i/NOT_gate_0'
-Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_NOT_gate_0_0/Master_NOT_gate_0_0/Master_NOT_gate_0_0_in_context.xdc] for cell 'Master_i/NOT_gate_0'
-Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_rx_mod_0_0/Master_rx_mod_0_0/Master_rx_mod_0_0_in_context.xdc] for cell 'Master_i/rx_mod_0'
-Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_rx_mod_0_0/Master_rx_mod_0_0/Master_rx_mod_0_0_in_context.xdc] for cell 'Master_i/rx_mod_0'
-Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_tx_mod_0_0/Master_tx_mod_0_0/Master_tx_mod_0_0_in_context.xdc] for cell 'Master_i/tx_mod_0'
-Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_tx_mod_0_0/Master_tx_mod_0_0/Master_tx_mod_0_0_in_context.xdc] for cell 'Master_i/tx_mod_0'
-Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_clock_div_0_0/Master_clock_div_0_0/Master_clock_div_0_0_in_context.xdc] for cell 'Master_i/clock_div_0'
-Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_clock_div_0_0/Master_clock_div_0_0/Master_clock_div_0_0_in_context.xdc] for cell 'Master_i/clock_div_0'
-Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_clock_div_1_0/Master_clock_div_1_0/Master_clock_div_1_0_in_context.xdc] for cell 'Master_i/clock_div_1'
-Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_clock_div_1_0/Master_clock_div_1_0/Master_clock_div_1_0_in_context.xdc] for cell 'Master_i/clock_div_1'
-Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_AND_gate_0_0/Master_AND_gate_0_0/Master_AND_gate_0_0_in_context.xdc] for cell 'Master_i/AND_gate_0'
-Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_AND_gate_0_0/Master_AND_gate_0_0/Master_AND_gate_0_0_in_context.xdc] for cell 'Master_i/AND_gate_0'
-Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_AND_gate_0_1/Master_AND_gate_0_1/Master_AND_gate_0_1_in_context.xdc] for cell 'Master_i/AND_gate_1'
-Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_AND_gate_0_1/Master_AND_gate_0_1/Master_AND_gate_0_1_in_context.xdc] for cell 'Master_i/AND_gate_1'
-Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_NOT_gate_0_1/Master_NOT_gate_0_1/Master_NOT_gate_0_0_in_context.xdc] for cell 'Master_i/NOT_gate_1'
-Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_NOT_gate_0_1/Master_NOT_gate_0_1/Master_NOT_gate_0_0_in_context.xdc] for cell 'Master_i/NOT_gate_1'
-Parsing XDC File [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/PYNQ-Z2_v1.0.xdc]
-WARNING: [Vivado 12-584] No ports matched 'sysclk'. [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/PYNQ-Z2_v1.0.xdc:9]
-Finished Parsing XDC File [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/PYNQ-Z2_v1.0.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/PYNQ-Z2_v1.0.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Master_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/PYNQ-Z2_v1.0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Master_wrapper_propImpl.xdc].
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_shift_register_gener_0_0/Master_shift_register_gener_0_0/Master_shift_register_gener_0_0_in_context.xdc] for cell 'Master_i/shift_register_gener_0'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_shift_register_gener_0_0/Master_shift_register_gener_0_0/Master_shift_register_gener_0_0_in_context.xdc] for cell 'Master_i/shift_register_gener_0'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_latch_0_0/Master_latch_0_0/Master_latch_0_0_in_context.xdc] for cell 'Master_i/latch_0'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_latch_0_0/Master_latch_0_0/Master_latch_0_0_in_context.xdc] for cell 'Master_i/latch_0'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_prescaler_0_0/Master_prescaler_0_0/Master_prescaler_0_0_in_context.xdc] for cell 'Master_i/prescaler_0'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_prescaler_0_0/Master_prescaler_0_0/Master_prescaler_0_0_in_context.xdc] for cell 'Master_i/prescaler_0'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_Chip_Select_0_0/Master_Chip_Select_0_0/Master_Chip_Select_0_0_in_context.xdc] for cell 'Master_i/Chip_Select_0'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_Chip_Select_0_0/Master_Chip_Select_0_0/Master_Chip_Select_0_0_in_context.xdc] for cell 'Master_i/Chip_Select_0'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_NOT_gate_0_0/Master_NOT_gate_0_0/Master_NOT_gate_0_0_in_context.xdc] for cell 'Master_i/NOT_gate_0'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_NOT_gate_0_0/Master_NOT_gate_0_0/Master_NOT_gate_0_0_in_context.xdc] for cell 'Master_i/NOT_gate_0'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_rx_mod_0_0/Master_rx_mod_0_0/Master_rx_mod_0_0_in_context.xdc] for cell 'Master_i/rx_mod_0'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_rx_mod_0_0/Master_rx_mod_0_0/Master_rx_mod_0_0_in_context.xdc] for cell 'Master_i/rx_mod_0'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_tx_mod_0_0/Master_tx_mod_0_0/Master_tx_mod_0_0_in_context.xdc] for cell 'Master_i/tx_mod_0'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_tx_mod_0_0/Master_tx_mod_0_0/Master_tx_mod_0_0_in_context.xdc] for cell 'Master_i/tx_mod_0'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_clock_div_0_0/Master_clock_div_0_0/Master_clock_div_0_0_in_context.xdc] for cell 'Master_i/clock_div_0'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_clock_div_0_0/Master_clock_div_0_0/Master_clock_div_0_0_in_context.xdc] for cell 'Master_i/clock_div_0'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_clock_div_1_0/Master_clock_div_1_0/Master_clock_div_1_0_in_context.xdc] for cell 'Master_i/clock_div_1'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_clock_div_1_0/Master_clock_div_1_0/Master_clock_div_1_0_in_context.xdc] for cell 'Master_i/clock_div_1'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_AND_gate_0_0/Master_AND_gate_0_0/Master_AND_gate_0_0_in_context.xdc] for cell 'Master_i/AND_gate_0'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_AND_gate_0_0/Master_AND_gate_0_0/Master_AND_gate_0_0_in_context.xdc] for cell 'Master_i/AND_gate_0'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_AND_gate_0_1/Master_AND_gate_0_1/Master_AND_gate_0_1_in_context.xdc] for cell 'Master_i/AND_gate_1'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_AND_gate_0_1/Master_AND_gate_0_1/Master_AND_gate_0_1_in_context.xdc] for cell 'Master_i/AND_gate_1'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_NOT_gate_0_1/Master_NOT_gate_0_1/Master_NOT_gate_0_0_in_context.xdc] for cell 'Master_i/NOT_gate_1'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.gen/sources_1/bd/Master/ip/Master_NOT_gate_0_1/Master_NOT_gate_0_1/Master_NOT_gate_0_0_in_context.xdc] for cell 'Master_i/NOT_gate_1'
+Parsing XDC File [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sysclk'. [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc:30]
+Finished Parsing XDC File [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Master_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Master_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Master_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1455.742 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1464.473 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1455.742 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1464.473 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1464.473 ; gain = 555.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1464.473 ; gain = 555.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -145,10 +149,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for Master_i/AND_gate_0. (constraint 
 Applied set_property KEEP_HIERARCHY = SOFT for Master_i/AND_gate_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for Master_i/NOT_gate_1. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1464.473 ; gain = 555.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1464.473 ; gain = 555.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -171,25 +175,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1464.473 ; gain = 555.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1464.473 ; gain = 555.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1464.473 ; gain = 555.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1464.473 ; gain = 555.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -207,37 +211,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1464.473 ; gain = 555.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1464.473 ; gain = 555.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1464.473 ; gain = 555.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1464.473 ; gain = 555.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1464.473 ; gain = 555.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1464.473 ; gain = 555.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -281,25 +285,25 @@ Report Cell Usage:
 |14    |OBUF                                 |     4|
 +------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1464.473 ; gain = 555.727
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1455.742 ; gain = 547.133
-Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1455.742 ; gain = 547.133
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1464.473 ; gain = 547.062
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1464.473 ; gain = 555.727
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1456.371 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1470.102 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1464.969 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1473.762 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 56468120
+Synth Design complete | Checksum: 7d3bcc8b
 INFO: [Common 17-83] Releasing license: Synthesis
-51 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+51 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1464.969 ; gain = 980.766
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1464.969 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/Master_wrapper.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1473.762 ; gain = 989.172
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1473.762 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/FPGA_1_MASTER/FPGA_1_MASTER.runs/synth_1/Master_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Master_wrapper_utilization_synth.rpt -pb Master_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed May 15 16:22:36 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri May 17 11:12:59 2024...

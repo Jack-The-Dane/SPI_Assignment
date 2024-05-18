@@ -57,6 +57,7 @@ ENTITY Master_prescaler_0_0 IS
   PORT (
     en : IN STD_LOGIC;
     rst : IN STD_LOGIC;
+    clk : IN STD_LOGIC;
     sample : IN STD_LOGIC;
     cnt : OUT STD_LOGIC
   );
@@ -72,12 +73,15 @@ ARCHITECTURE Master_prescaler_0_0_arch OF Master_prescaler_0_0 IS
     PORT (
       en : IN STD_LOGIC;
       rst : IN STD_LOGIC;
+      clk : IN STD_LOGIC;
       sample : IN STD_LOGIC;
       cnt : OUT STD_LOGIC
     );
   END COMPONENT prescaler;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
+  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN Master_clk, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
   ATTRIBUTE X_INTERFACE_PARAMETER OF rst: SIGNAL IS "XIL_INTERFACENAME rst, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF rst: SIGNAL IS "xilinx.com:signal:reset:1.0 rst RST";
 BEGIN
@@ -88,6 +92,7 @@ BEGIN
     PORT MAP (
       en => en,
       rst => rst,
+      clk => clk,
       sample => sample,
       cnt => cnt
     );

@@ -49,69 +49,191 @@ component sub_spi_wrapper is
         );
 end component sub_spi_wrapper;
 
-signal clk_sig : std_logic := '0';
-signal MOSI_sig : std_logic := '0';
-signal sin_sig : std_logic := '0';
-signal rst_sig : std_logic := '0';
-signal SCLK_sig : std_logic := '0';
-signal CS_sig : std_logic := '0';
-signal MISO_sig : std_logic;
-signal sout_sig : std_logic;
+constant TIME_DELTA : time := 10 us; -- period: 20 micro s
+
+signal clk_tb : std_logic := '0';
+signal MOSI_tb : std_logic := '0';
+signal sin_tb : std_logic := '0';
+signal rst_tb : std_logic := '0';
+signal SCLK_tb : std_logic := '0';
+signal CS_tb : std_logic := '0';
+signal MISO_tb : std_logic;
+signal sout_tb : std_logic;
 
 signal input_data : std_logic_vector(7 downto 0) := "10101010";
 begin
 
 DUT: component sub_spi_wrapper
 port map (
-        clk => clk_sig,
-        MOSI => MOSI_sig,
-        sin => sin_sig,
-        rst => rst_sig,
-        SCLK => SCLK_sig,
-        CS => CS_sig,
-        MISO => MISO_sig,
-        sout => sout_sig);
+        clk => clk_tb,
+        MOSI => MOSI_tb,
+        sin => sin_tb,
+        rst => rst_tb,
+        SCLK => SCLK_tb,
+        CS => CS_tb,
+        MISO => MISO_tb,
+        sout => sout_tb);
         
-clk_sig <= not clk_sig after 10 ns;
+--clk_sig <= not clk_sig after 10 ns;
 
 
 
-process
-begin
-rst_sig <= '1';
-wait for 10 us;
-rst_sig <= '0';
-sin_sig <= '1';
-MOSI_sig <= '1';
-CS_sig <= '1';
-SCLK_sig <= '1';
+--process
+--begin
+--rst_sig <= '1';
+--wait for 10 us;
+--rst_sig <= '0';
+--sin_sig <= '1';
+--MOSI_sig <= '1';
+--CS_sig <= '1';
+--SCLK_sig <= '1';
 
-wait for 50 us;
+--wait for 50 us;
 
-sin_sig <= '0';
+--sin_sig <= '0';
 
-wait for 50 us;
+--wait for 50 us;
 
-sin_sig <= '1';
+--sin_sig <= '1';
 
-wait for 5 us;
+--wait for 5 us;
 
-CS_sig <= '0';
-wait for 5 us;
-for i in input_data'HIGH downto 0 loop
-    SCLK_sig <= '0';
-    MOSI_sig <= input_data(i);
-    wait for 5 us;
-    SCLK_sig <= '1';
-    wait for 5 us;
-end loop;
-CS_sig <= '1';
-wait for 1 ms;
-end process;
+--CS_sig <= '0';
+--wait for 5 us;
+--for i in input_data'HIGH downto 0 loop
+    --SCLK_sig <= '0';
+    --MOSI_sig <= input_data(i);
+    --wait for 5 us;
+    --SCLK_sig <= '1';
+    --wait for 5 us;
+--end loop;
+--CS_sig <= '1';
+--wait for 1 ms;
+--end process;
 
-process(clk_div)
-begin
-
+simulation_clk: process
+    begin
+    
+        clk_tb <= '0';
+        
+        wait for TIME_DELTA;
+        
+        clk_tb <= '1';
+        
+        wait for TIME_DELTA;
+    
+    end process simulation_clk;
+    
+    simulation: process
+    begin
+        
+        rst_tb <= '1';
+        wait for TIME_DELTA;
+        rst_tb <= '0';
+        MOSI_tb <= '0';
+        rst_tb <= '0';
+        sin_tb <= '1';
+        CS_tb <= '1';
+        SCLK_tb <= '1';
+        
+        wait for TIME_DELTA * 814;
+        wait for TIME_DELTA * 814;
+        sin_tb <= '0';
+        
+        wait for TIME_DELTA * 814 * 16;
+        wait for TIME_DELTA * 814 * 16;
+        sin_tb <= '0';
+        
+        wait for TIME_DELTA * 814 * 16;
+        wait for TIME_DELTA * 814 * 16;
+        sin_tb <= '1';
+        
+        wait for TIME_DELTA * 814 * 16;
+        wait for TIME_DELTA * 814 * 16;
+        sin_tb <= '1';
+        
+        wait for TIME_DELTA * 814 * 16;
+        wait for TIME_DELTA * 814 * 16;
+        sin_tb <= '0';
+        
+        wait for TIME_DELTA * 814 * 16;
+        wait for TIME_DELTA * 814 * 16;
+        sin_tb <= '0';
+        
+        wait for TIME_DELTA * 814 * 16;
+        wait for TIME_DELTA * 814 * 16;
+        sin_tb <= '0';
+        
+        wait for TIME_DELTA * 814 * 16;
+        wait for TIME_DELTA * 814 * 16;
+        sin_tb <= '1';
+        
+        wait for TIME_DELTA * 814 * 16;
+        wait for TIME_DELTA * 814 * 16;
+        sin_tb <= '0';
+        
+        wait for TIME_DELTA * 814 * 16;
+        wait for TIME_DELTA * 814 * 16;
+        sin_tb <= '1';
+        
+        wait for TIME_DELTA * 814 * 16;
+        wait for TIME_DELTA * 4096;
+        CS_tb <= '0';
+        SCLK_tb <= '0';
+        MOSI_tb <= '1';
+        
+        wait for TIME_DELTA * 4096 * 2;
+        SCLK_tb <= '1';
+        wait for TIME_DELTA * 4096 * 2;
+        SCLK_tb <= '0';
+        MOSI_tb <= '0';
+        
+        wait for TIME_DELTA * 4096 * 2;
+        SCLK_tb <= '1';
+        wait for TIME_DELTA * 4096 * 2;
+        SCLK_tb <= '0';
+        MOSI_tb <= '0';
+        
+        wait for TIME_DELTA * 4096 * 2;
+        SCLK_tb <= '1';
+        wait for TIME_DELTA * 4096 * 2;
+        SCLK_tb <= '0';
+        MOSI_tb <= '0';
+        
+        wait for TIME_DELTA * 4096 * 2;
+        SCLK_tb <= '1';
+        wait for TIME_DELTA * 4096 * 2;
+        SCLK_tb <= '0';
+        MOSI_tb <= '1';
+        
+        wait for TIME_DELTA * 4096 * 2;
+        SCLK_tb <= '1';
+        wait for TIME_DELTA * 4096 * 2;
+        SCLK_tb <= '0';
+        MOSI_tb <= '0';
+        
+        wait for TIME_DELTA * 4096 * 2;
+        SCLK_tb <= '1';
+        wait for TIME_DELTA * 4096 * 2;
+        SCLK_tb <= '0';
+        MOSI_tb <= '1';
+        
+        wait for TIME_DELTA * 4096 * 2;
+        SCLK_tb <= '1';
+        wait for TIME_DELTA * 4096 * 2;
+        SCLK_tb <= '0';
+        MOSI_tb <= '1';
+        
+        wait for TIME_DELTA * 4096 * 2;
+        SCLK_tb <= '1';
+        wait for TIME_DELTA * 4096 * 2;
+        MOSI_tb <= '0';
+        CS_tb <= '1';
+        
+        
+        wait;
+    
+    end process simulation;
 
 
 end Behavioral;

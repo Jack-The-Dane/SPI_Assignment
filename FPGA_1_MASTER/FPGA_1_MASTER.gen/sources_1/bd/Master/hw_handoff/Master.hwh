@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May 15 16:21:33 2024" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri May 17 11:05:23 2024" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="Master" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -28,6 +28,7 @@
       <CONNECTIONS>
         <CONNECTION INSTANCE="clock_div_0" PORT="clk"/>
         <CONNECTION INSTANCE="clock_div_1" PORT="clk"/>
+        <CONNECTION INSTANCE="prescaler_0" PORT="clk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
@@ -76,6 +77,8 @@
         <PORT DIR="O" NAME="C" SIGIS="undef" SIGNAME="AND_gate_0_C">
           <CONNECTIONS>
             <CONNECTION INSTANCE="NOT_gate_1" PORT="A"/>
+            <CONNECTION INSTANCE="shift_register_gener_0" PORT="sample"/>
+            <CONNECTION INSTANCE="prescaler_0" PORT="sample"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -147,8 +150,8 @@
         </PORT>
         <PORT DIR="O" NAME="B" SIGIS="undef" SIGNAME="NOT_gate_0_B">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="prescaler_0" PORT="en"/>
             <CONNECTION INSTANCE="AND_gate_0" PORT="B"/>
+            <CONNECTION INSTANCE="prescaler_0" PORT="en"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -190,10 +193,8 @@
         </PORT>
         <PORT DIR="O" NAME="clk_div" SIGIS="undef" SIGNAME="clock_div_0_clk_div">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="shift_register_gener_0" PORT="sample"/>
-            <CONNECTION INSTANCE="prescaler_0" PORT="sample"/>
-            <CONNECTION INSTANCE="AND_gate_0" PORT="A"/>
             <CONNECTION INSTANCE="Chip_Select_0" PORT="SCLK"/>
+            <CONNECTION INSTANCE="AND_gate_0" PORT="A"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
@@ -271,6 +272,11 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="cnt" SIGIS="undef" SIGNAME="prescaler_0_cnt">
           <CONNECTIONS>
             <CONNECTION INSTANCE="latch_0" PORT="cnt"/>
@@ -287,9 +293,9 @@
             <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="sample" SIGIS="undef" SIGNAME="clock_div_0_clk_div">
+        <PORT DIR="I" NAME="sample" SIGIS="undef" SIGNAME="AND_gate_0_C">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="clock_div_0" PORT="clk_div"/>
+            <CONNECTION INSTANCE="AND_gate_0" PORT="C"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -368,9 +374,9 @@
             <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="sample" SIGIS="undef" SIGNAME="clock_div_0_clk_div">
+        <PORT DIR="I" NAME="sample" SIGIS="undef" SIGNAME="AND_gate_0_C">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="clock_div_0" PORT="clk_div"/>
+            <CONNECTION INSTANCE="AND_gate_0" PORT="C"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

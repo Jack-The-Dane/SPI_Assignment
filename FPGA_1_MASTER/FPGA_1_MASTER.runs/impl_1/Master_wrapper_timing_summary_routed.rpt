@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Wed May 15 16:23:25 2024
+| Date         : Fri May 17 11:13:51 2024
 | Host         : Cornelia running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file Master_wrapper_timing_summary_routed.rpt -pb Master_wrapper_timing_summary_routed.pb -rpx Master_wrapper_timing_summary_routed.rpx -warn_on_violation
 | Design       : Master_wrapper
@@ -239,8 +239,8 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
     SLICE_X111Y87        FDRE                         0.000     0.000 r  Master_i/clock_div_0/U0/clk_div_reg/C
     SLICE_X111Y87        FDRE (Prop_fdre_C_Q)         0.456     0.456 f  Master_i/clock_div_0/U0/clk_div_reg/Q
-                         net (fo=18, routed)          1.666     2.122    Master_i/AND_gate_0/A
-    SLICE_X113Y74        LUT1 (Prop_lut1_I0_O)        0.124     2.246 r  Master_i/AND_gate_0/C_INST_0/O
+                         net (fo=18, routed)          1.666     2.122    Master_i/NOT_gate_1/A
+    SLICE_X113Y74        LUT1 (Prop_lut1_I0_O)        0.124     2.246 r  Master_i/NOT_gate_1/B_INST_0/O
                          net (fo=1, routed)           2.060     4.306    SCLK_OBUF
     Y19                  OBUF (Prop_obuf_I_O)         3.573     7.880 r  SCLK_OBUF_inst/O
                          net (fo=0)                   0.000     7.880    SCLK
