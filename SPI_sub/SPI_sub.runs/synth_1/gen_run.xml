@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1715781572" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/sub_spi_wrapper.dcp">
-  <File Type="PA-TCL" Name="sub_spi_wrapper.tcl"/>
-  <File Type="REPORTS-TCL" Name="sub_spi_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="sub_spi_wrapper.vds"/>
-  <File Type="RDS-UTIL" Name="sub_spi_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="sub_spi_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="sub_spi_wrapper.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1716126758" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/sub_spi_wrapper.dcp">
+  <File Type="PA-TCL" Name="assignment_3_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="assignment_3_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="assignment_3_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="assignment_3_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="assignment_3_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="assignment_3_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="assignment_3_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="assignment_3_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="assignment_3_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/fsm_template.vhd">
@@ -32,6 +35,24 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/rx_mod_rtl.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/latch_1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/AND_gate.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/tx_mod_fsm.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -44,26 +65,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/rx_mod_rtl.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/AND_gate.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/bd/sub_spi/sub_spi.bd">
+    <File Path="$PSRCDIR/sources_1/bd/assignment_3/assignment_3.bd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PGENDIR/sources_1/bd/sub_spi/hdl/sub_spi_wrapper.v">
+    <File Path="$PGENDIR/sources_1/bd/assignment_3/hdl/assignment_3_wrapper.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -93,6 +102,21 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/latch.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/sub_spi/sub_spi.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/prescaler.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -100,11 +124,17 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PGENDIR/sources_1/bd/sub_spi/hdl/sub_spi_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="sub_spi_wrapper"/>
-      <Option Name="TopLib" Val="xil_defaultlib"/>
-      <Option Name="TopRTLFile" Val="$PGENDIR/sources_1/bd/sub_spi/hdl/sub_spi_wrapper.v"/>
+      <Option Name="TopModule" Val="assignment_3_wrapper"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
@@ -137,15 +167,16 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="sub_spi_AND_gate_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="sub_spi_synchronizer_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="sub_spi_fsm_template_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="assignment_3_synchronizer_0_3"/>
   <BlockFileSet Type="BlockSrcs" Name="sub_spi_rx_mod_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="assignment_3_SPI_sub_0"/>
   <BlockFileSet Type="BlockSrcs" Name="uart_loop_uart_loop_mod_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="sub_spi_clock_div_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="sub_spi_synchronizer_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="sub_spi_tx_mod_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="sub_spi_synchronizer_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="sub_spi_Rising_edge_detector_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="sub_spi_Falling_edge_detector_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="assignment_3_synchronizer_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="assignment_3_Falling_edge_detector_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="assignment_3_synchronizer_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="assignment_3_AND_gate_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="assignment_3_synchronizer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="assignment_3_Rising_edge_detector_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="assignment_3_latch_1_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="assignment_3_clock_div_0_1"/>
 </GenRun>

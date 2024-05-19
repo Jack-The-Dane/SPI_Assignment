@@ -7,8 +7,7 @@
       "name": "sub_spi",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2023.2",
-      "validated": "true"
+      "tool_version": "2023.2"
     },
     "design_tree": {
       "SPI_sub": "",
@@ -22,7 +21,7 @@
       "rx_mod_0": "",
       "sin_synchronizer": "",
       "AND_gate_0": "",
-      "latch_0": ""
+      "latch_1_0": ""
     },
     "ports": {
       "MISO": {
@@ -30,33 +29,7 @@
       },
       "clk": {
         "type": "clk",
-        "direction": "I",
-        "parameters": {
-          "ASSOCIATED_RESET": {
-            "value": "rst",
-            "value_src": "default"
-          },
-          "CLK_DOMAIN": {
-            "value": "sub_spi_clk",
-            "value_src": "default"
-          },
-          "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
-          }
-        }
+        "direction": "I"
       },
       "MOSI": {
         "direction": "I"
@@ -69,17 +42,7 @@
       },
       "rst": {
         "type": "rst",
-        "direction": "I",
-        "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "POLARITY": {
-            "value": "ACTIVE_LOW",
-            "value_src": "default"
-          }
-        }
+        "direction": "I"
       },
       "sout": {
         "direction": "O"
@@ -370,10 +333,6 @@
               "ASSOCIATED_RESET": {
                 "value": "rst",
                 "value_src": "constant"
-              },
-              "CLK_DOMAIN": {
-                "value": "sub_spi_clk",
-                "value_src": "default_prop"
               }
             }
           },
@@ -481,15 +440,15 @@
           }
         }
       },
-      "latch_0": {
-        "vlnv": "xilinx.com:module_ref:latch:1.0",
+      "latch_1_0": {
+        "vlnv": "xilinx.com:module_ref:latch_1:1.0",
         "ip_revision": "1",
-        "xci_name": "sub_spi_latch_0_0",
-        "xci_path": "ip\\sub_spi_latch_0_0\\sub_spi_latch_0_0.xci",
-        "inst_hier_path": "latch_0",
+        "xci_name": "sub_spi_latch_1_0_0",
+        "xci_path": "ip\\sub_spi_latch_1_0_0\\sub_spi_latch_1_0_0.xci",
+        "inst_hier_path": "latch_1_0",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "latch",
+          "ref_name": "latch_1",
           "boundary_crc": "0x0"
         },
         "ports": {
@@ -571,20 +530,20 @@
       "SPI_sub_transmission_done": {
         "ports": [
           "SPI_sub/transmission_done",
-          "latch_0/D"
+          "latch_1_0/D"
         ]
       },
       "clk_0_1": {
         "ports": [
           "clk",
-          "clock_div_0/clk",
           "SPI_sub/clk",
           "MOSI_synchronizer/clk",
           "SCLK_synchronizer/clk",
           "CS_synchronizer/clk",
           "SCLK_rising_edge_detector/clk",
           "SCLK_falling_edge_detector/clk",
-          "sin_synchronizer/clk"
+          "sin_synchronizer/clk",
+          "clock_div_0/clk"
         ]
       },
       "clock_div_0_clk_div": {
@@ -592,7 +551,7 @@
           "clock_div_0/clk_div",
           "rx_mod_0/clk",
           "tx_mod_0/clkfast",
-          "latch_0/clk"
+          "latch_1_0/clk"
         ]
       },
       "fsm_template_0_MISO": {
@@ -601,19 +560,19 @@
           "MISO"
         ]
       },
-      "latch_0_Q": {
+      "latch_1_0_Q": {
         "ports": [
-          "latch_0/Q",
+          "latch_1_0/Q",
           "AND_gate_0/A"
         ]
       },
       "rst_0_1": {
         "ports": [
           "rst",
-          "clock_div_0/rst",
           "rx_mod_0/rst",
           "SPI_sub/rst",
-          "tx_mod_0/rst"
+          "tx_mod_0/rst",
+          "clock_div_0/rst"
         ]
       },
       "rx_mod_0_data_out": {

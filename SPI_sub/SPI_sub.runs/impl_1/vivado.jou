@@ -1,14 +1,14 @@
 #-----------------------------------------------------------
 # Vivado v2023.2 (64-bit)
-# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Wed May 15 16:00:46 2024
-# Process ID: 48955
-# Current directory: /home/jacob/Documents/Semester4/FPGA/Assignment_3/SPI_sub/SPI_sub.runs/impl_1
-# Command line: vivado -log sub_spi_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sub_spi_wrapper.tcl -notrace
-# Log file: /home/jacob/Documents/Semester4/FPGA/Assignment_3/SPI_sub/SPI_sub.runs/impl_1/sub_spi_wrapper.vdi
-# Journal file: /home/jacob/Documents/Semester4/FPGA/Assignment_3/SPI_sub/SPI_sub.runs/impl_1/vivado.jou
-# Running On: Laptop, OS: Linux, CPU Frequency: 1397.176 MHz, CPU Physical cores: 8, Host memory: 16109 MB
+# Start of session at: Sun May 19 15:54:51 2024
+# Process ID: 8168
+# Current directory: C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/impl_1
+# Command line: vivado.exe -log assignment_3_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source assignment_3_wrapper.tcl -notrace
+# Log file: C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/impl_1/assignment_3_wrapper.vdi
+# Journal file: C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/impl_1\vivado.jou
+# Running On: Cornelia, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 12, Host memory: 16890 MB
 #-----------------------------------------------------------
-source sub_spi_wrapper.tcl -notrace
+source assignment_3_wrapper.tcl -notrace

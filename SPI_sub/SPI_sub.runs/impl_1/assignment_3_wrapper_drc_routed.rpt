@@ -1,0 +1,59 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Sun May 19 15:55:32 2024
+| Host         : Cornelia running 64-bit major release  (build 9200)
+| Command      : report_drc -file assignment_3_wrapper_drc_routed.rpt -pb assignment_3_wrapper_drc_routed.pb -rpx assignment_3_wrapper_drc_routed.rpx
+| Design       : assignment_3_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 4
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PDRC-153    | Warning  | Gated clock check                                           | 2          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
+| ZPS7-1      | Warning  | PS7 block required                                          | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net assignment_3_i/SPI_sub/inst/E[0] is a gated clock net sourced by a combinational pin assignment_3_i/SPI_sub/inst/transmission_done_INST_0/O, cell assignment_3_i/SPI_sub/inst/transmission_done_INST_0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net assignment_3_i/SPI_sub/inst/MISO_reg_i_2_n_0 is a gated clock net sourced by a combinational pin assignment_3_i/SPI_sub/inst/MISO_reg_i_2/O, cell assignment_3_i/SPI_sub/inst/MISO_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT assignment_3_i/SPI_sub/inst/transmission_done_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+assignment_3_i/latch_1_0/inst/Q_reg
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

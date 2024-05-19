@@ -1,0 +1,632 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x35CC7568BBBD18A9",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../SPI_sub.gen/sources_1/bd/assignment_3",
+      "name": "assignment_3",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "SPI_sub": "",
+      "synchronizer_0": "",
+      "synchronizer_1": "",
+      "synchronizer_2": "",
+      "synchronizer_3": "",
+      "Rising_edge_detector_0": "",
+      "Falling_edge_detector_0": "",
+      "rx_mod_0": "",
+      "latch_1_0": "",
+      "AND_gate_0": "",
+      "tx_mod_0": "",
+      "clock_div_0": ""
+    },
+    "ports": {
+      "MOSI": {
+        "direction": "I"
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "assignment_3_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "SCLK": {
+        "direction": "I"
+      },
+      "CS": {
+        "direction": "I"
+      },
+      "sin": {
+        "direction": "I"
+      },
+      "rst": {
+        "direction": "I"
+      },
+      "MISO": {
+        "direction": "O"
+      },
+      "sout": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "SPI_sub": {
+        "vlnv": "xilinx.com:module_ref:fsm_template:1.0",
+        "ip_revision": "1",
+        "xci_name": "assignment_3_SPI_sub_0",
+        "xci_path": "ip\\assignment_3_SPI_sub_0\\assignment_3_SPI_sub_0.xci",
+        "inst_hier_path": "SPI_sub",
+        "parameters": {
+          "n_bits": {
+            "value": "8"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fsm_template",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "assignment_3_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "SCLK_rising": {
+            "direction": "I"
+          },
+          "SCLK_falling": {
+            "direction": "I"
+          },
+          "MOSI": {
+            "direction": "I"
+          },
+          "CS": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "MISO": {
+            "direction": "O"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "transmission_done": {
+            "direction": "O"
+          }
+        }
+      },
+      "synchronizer_0": {
+        "vlnv": "xilinx.com:module_ref:synchronizer:1.0",
+        "ip_revision": "1",
+        "xci_name": "assignment_3_synchronizer_0_0",
+        "xci_path": "ip\\assignment_3_synchronizer_0_0\\assignment_3_synchronizer_0_0.xci",
+        "inst_hier_path": "synchronizer_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "synchronizer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "assignment_3_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "D": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O"
+          }
+        }
+      },
+      "synchronizer_1": {
+        "vlnv": "xilinx.com:module_ref:synchronizer:1.0",
+        "ip_revision": "1",
+        "xci_name": "assignment_3_synchronizer_0_1",
+        "xci_path": "ip\\assignment_3_synchronizer_0_1\\assignment_3_synchronizer_0_1.xci",
+        "inst_hier_path": "synchronizer_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "synchronizer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "assignment_3_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "D": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O"
+          }
+        }
+      },
+      "synchronizer_2": {
+        "vlnv": "xilinx.com:module_ref:synchronizer:1.0",
+        "ip_revision": "1",
+        "xci_name": "assignment_3_synchronizer_0_2",
+        "xci_path": "ip\\assignment_3_synchronizer_0_2\\assignment_3_synchronizer_0_2.xci",
+        "inst_hier_path": "synchronizer_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "synchronizer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "assignment_3_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "D": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O"
+          }
+        }
+      },
+      "synchronizer_3": {
+        "vlnv": "xilinx.com:module_ref:synchronizer:1.0",
+        "ip_revision": "1",
+        "xci_name": "assignment_3_synchronizer_0_3",
+        "xci_path": "ip\\assignment_3_synchronizer_0_3\\assignment_3_synchronizer_0_3.xci",
+        "inst_hier_path": "synchronizer_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "synchronizer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "assignment_3_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "D": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O"
+          }
+        }
+      },
+      "Rising_edge_detector_0": {
+        "vlnv": "xilinx.com:module_ref:Rising_edge_detector:1.0",
+        "ip_revision": "1",
+        "xci_name": "assignment_3_Rising_edge_detector_0_0",
+        "xci_path": "ip\\assignment_3_Rising_edge_detector_0_0\\assignment_3_Rising_edge_detector_0_0.xci",
+        "inst_hier_path": "Rising_edge_detector_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Rising_edge_detector",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "assignment_3_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "D": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O"
+          }
+        }
+      },
+      "Falling_edge_detector_0": {
+        "vlnv": "xilinx.com:module_ref:Falling_edge_detector:1.0",
+        "ip_revision": "1",
+        "xci_name": "assignment_3_Falling_edge_detector_0_0",
+        "xci_path": "ip\\assignment_3_Falling_edge_detector_0_0\\assignment_3_Falling_edge_detector_0_0.xci",
+        "inst_hier_path": "Falling_edge_detector_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Falling_edge_detector",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "assignment_3_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "D": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O"
+          }
+        }
+      },
+      "rx_mod_0": {
+        "vlnv": "xilinx.com:module_ref:rx_mod:1.0",
+        "ip_revision": "1",
+        "xci_name": "assignment_3_rx_mod_0_0",
+        "xci_path": "ip\\assignment_3_rx_mod_0_0\\assignment_3_rx_mod_0_0.xci",
+        "inst_hier_path": "rx_mod_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "rx_mod",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "sin": {
+            "direction": "I"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "intr": {
+            "type": "intr",
+            "direction": "O",
+            "parameters": {
+              "SENSITIVITY": {
+                "value": "LEVEL_HIGH",
+                "value_src": "constant"
+              }
+            }
+          }
+        }
+      },
+      "latch_1_0": {
+        "vlnv": "xilinx.com:module_ref:latch_1:1.0",
+        "ip_revision": "1",
+        "xci_name": "assignment_3_latch_1_0_0",
+        "xci_path": "ip\\assignment_3_latch_1_0_0\\assignment_3_latch_1_0_0.xci",
+        "inst_hier_path": "latch_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "latch_1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O"
+          }
+        }
+      },
+      "AND_gate_0": {
+        "vlnv": "xilinx.com:module_ref:AND_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "assignment_3_AND_gate_0_0",
+        "xci_path": "ip\\assignment_3_AND_gate_0_0\\assignment_3_AND_gate_0_0.xci",
+        "inst_hier_path": "AND_gate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AND_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "tx_mod_0": {
+        "vlnv": "xilinx.com:module_ref:tx_mod:1.0",
+        "ip_revision": "1",
+        "xci_name": "assignment_3_tx_mod_0_0",
+        "xci_path": "ip\\assignment_3_tx_mod_0_0\\assignment_3_tx_mod_0_0.xci",
+        "inst_hier_path": "tx_mod_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "tx_mod",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clkfast": {
+            "direction": "I"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "shift_load": {
+            "direction": "I"
+          },
+          "sout": {
+            "direction": "O"
+          },
+          "xmitmt": {
+            "direction": "O"
+          }
+        }
+      },
+      "clock_div_0": {
+        "vlnv": "xilinx.com:module_ref:clock_div:1.0",
+        "ip_revision": "1",
+        "xci_name": "assignment_3_clock_div_0_1",
+        "xci_path": "ip\\assignment_3_clock_div_0_1\\assignment_3_clock_div_0_1.xci",
+        "inst_hier_path": "clock_div_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_div",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "assignment_3_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clk_div": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "AND_gate_0_C": {
+        "ports": [
+          "AND_gate_0/C",
+          "tx_mod_0/shift_load"
+        ]
+      },
+      "D_0_2": {
+        "ports": [
+          "SCLK",
+          "synchronizer_0/D"
+        ]
+      },
+      "D_0_3": {
+        "ports": [
+          "CS",
+          "synchronizer_2/D"
+        ]
+      },
+      "D_0_4": {
+        "ports": [
+          "sin",
+          "synchronizer_1/D"
+        ]
+      },
+      "Falling_edge_detector_0_Q": {
+        "ports": [
+          "Falling_edge_detector_0/Q",
+          "SPI_sub/SCLK_falling"
+        ]
+      },
+      "MOSI_1": {
+        "ports": [
+          "MOSI",
+          "synchronizer_3/D"
+        ]
+      },
+      "Rising_edge_detector_0_Q": {
+        "ports": [
+          "Rising_edge_detector_0/Q",
+          "SPI_sub/SCLK_rising"
+        ]
+      },
+      "SPI_sub_MISO": {
+        "ports": [
+          "SPI_sub/MISO",
+          "MISO"
+        ]
+      },
+      "SPI_sub_data_out": {
+        "ports": [
+          "SPI_sub/data_out",
+          "tx_mod_0/data_in"
+        ]
+      },
+      "SPI_sub_transmission_done": {
+        "ports": [
+          "SPI_sub/transmission_done",
+          "latch_1_0/D"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "synchronizer_3/clk",
+          "synchronizer_0/clk",
+          "synchronizer_2/clk",
+          "synchronizer_1/clk",
+          "Rising_edge_detector_0/clk",
+          "Falling_edge_detector_0/clk",
+          "SPI_sub/clk",
+          "clock_div_0/clk"
+        ]
+      },
+      "clock_div_0_clk_div": {
+        "ports": [
+          "clock_div_0/clk_div",
+          "rx_mod_0/clk",
+          "tx_mod_0/clkfast",
+          "latch_1_0/clk"
+        ]
+      },
+      "latch_1_0_Q": {
+        "ports": [
+          "latch_1_0/Q",
+          "AND_gate_0/A"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "SPI_sub/rst",
+          "tx_mod_0/rst",
+          "rx_mod_0/rst",
+          "clock_div_0/rst"
+        ]
+      },
+      "rx_mod_0_data_out": {
+        "ports": [
+          "rx_mod_0/data_out",
+          "SPI_sub/data_in"
+        ]
+      },
+      "synchronizer_0_Q": {
+        "ports": [
+          "synchronizer_0/Q",
+          "Rising_edge_detector_0/D",
+          "Falling_edge_detector_0/D"
+        ]
+      },
+      "synchronizer_1_Q": {
+        "ports": [
+          "synchronizer_1/Q",
+          "rx_mod_0/sin"
+        ]
+      },
+      "synchronizer_2_Q": {
+        "ports": [
+          "synchronizer_2/Q",
+          "SPI_sub/CS"
+        ]
+      },
+      "synchronizer_3_Q": {
+        "ports": [
+          "synchronizer_3/Q",
+          "SPI_sub/MOSI"
+        ]
+      },
+      "tx_mod_0_sout": {
+        "ports": [
+          "tx_mod_0/sout",
+          "sout"
+        ]
+      },
+      "tx_mod_0_xmitmt": {
+        "ports": [
+          "tx_mod_0/xmitmt",
+          "AND_gate_0/B"
+        ]
+      }
+    }
+  }
+}

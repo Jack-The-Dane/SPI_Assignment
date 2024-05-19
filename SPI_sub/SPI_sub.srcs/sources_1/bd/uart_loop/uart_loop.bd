@@ -225,10 +225,6 @@
               "ASSOCIATED_RESET": {
                 "value": "rst",
                 "value_src": "constant"
-              },
-              "CLK_DOMAIN": {
-                "value": "uart_loop_clk_0",
-                "value_src": "default_prop"
               }
             }
           },
@@ -242,8 +238,8 @@
       "clk_0_1": {
         "ports": [
           "clk",
-          "clock_div_0/clk",
-          "synchronizer_0/clk"
+          "synchronizer_0/clk",
+          "clock_div_0/clk"
         ]
       },
       "clock_div_0_clk_div": {
@@ -307,8 +303,8 @@
           "xlconstant_0/dout",
           "uart_loop_mod_0/rst",
           "rx_mod_0/rst",
-          "clock_div_0/rst",
-          "tx_mod_0/rst"
+          "tx_mod_0/rst",
+          "clock_div_0/rst"
         ]
       }
     }

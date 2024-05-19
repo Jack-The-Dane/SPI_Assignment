@@ -1,0 +1,324 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun May 19 15:54:14 2024
+# Process ID: 5100
+# Current directory: C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1
+# Command line: vivado.exe -log assignment_3_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source assignment_3_wrapper.tcl
+# Log file: C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/assignment_3_wrapper.vds
+# Journal file: C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1\vivado.jou
+# Running On: Cornelia, OS: Windows, CPU Frequency: 3110 MHz, CPU Physical cores: 12, Host memory: 16890 MB
+#-----------------------------------------------------------
+source assignment_3_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.srcs/utils_1/imports/synth_1/sub_spi_wrapper.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.srcs/utils_1/imports/synth_1/sub_spi_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top assignment_3_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8604
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1347.395 ; gain = 438.262
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'assignment_3_wrapper' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/hdl/assignment_3_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'assignment_3' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/synth/assignment_3.v:13]
+INFO: [Synth 8-6157] synthesizing module 'assignment_3_AND_gate_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_AND_gate_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'assignment_3_AND_gate_0_0' (0#1) [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_AND_gate_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'assignment_3_Falling_edge_detector_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_Falling_edge_detector_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'assignment_3_Falling_edge_detector_0_0' (0#1) [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_Falling_edge_detector_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'assignment_3_Rising_edge_detector_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_Rising_edge_detector_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'assignment_3_Rising_edge_detector_0_0' (0#1) [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_Rising_edge_detector_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'assignment_3_SPI_sub_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_SPI_sub_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'assignment_3_SPI_sub_0' (0#1) [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_SPI_sub_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'assignment_3_clock_div_0_1' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_clock_div_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'assignment_3_clock_div_0_1' (0#1) [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_clock_div_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'assignment_3_latch_1_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_latch_1_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'assignment_3_latch_1_0_0' (0#1) [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_latch_1_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'assignment_3_rx_mod_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_rx_mod_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'assignment_3_rx_mod_0_0' (0#1) [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_rx_mod_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'intr' of module 'assignment_3_rx_mod_0_0' is unconnected for instance 'rx_mod_0' [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/synth/assignment_3.v:93]
+WARNING: [Synth 8-7023] instance 'rx_mod_0' of module 'assignment_3_rx_mod_0_0' has 5 connections declared, but only 4 given [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/synth/assignment_3.v:93]
+INFO: [Synth 8-6157] synthesizing module 'assignment_3_synchronizer_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_synchronizer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'assignment_3_synchronizer_0_0' (0#1) [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_synchronizer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'assignment_3_synchronizer_0_1' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_synchronizer_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'assignment_3_synchronizer_0_1' (0#1) [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_synchronizer_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'assignment_3_synchronizer_0_2' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_synchronizer_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'assignment_3_synchronizer_0_2' (0#1) [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_synchronizer_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'assignment_3_synchronizer_0_3' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_synchronizer_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'assignment_3_synchronizer_0_3' (0#1) [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_synchronizer_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'assignment_3_tx_mod_0_0' [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_tx_mod_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'assignment_3_tx_mod_0_0' (0#1) [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/.Xil/Vivado-5100-Cornelia/realtime/assignment_3_tx_mod_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'assignment_3' (0#1) [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/synth/assignment_3.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'assignment_3_wrapper' (0#1) [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/hdl/assignment_3_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1454.535 ; gain = 545.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1454.535 ; gain = 545.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1454.535 ; gain = 545.402
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1454.535 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_SPI_sub_0/assignment_3_SPI_sub_0/assignment_3_SPI_sub_0_in_context.xdc] for cell 'assignment_3_i/SPI_sub'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_SPI_sub_0/assignment_3_SPI_sub_0/assignment_3_SPI_sub_0_in_context.xdc] for cell 'assignment_3_i/SPI_sub'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_synchronizer_0_0/assignment_3_synchronizer_0_0/assignment_3_synchronizer_0_0_in_context.xdc] for cell 'assignment_3_i/synchronizer_0'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_synchronizer_0_0/assignment_3_synchronizer_0_0/assignment_3_synchronizer_0_0_in_context.xdc] for cell 'assignment_3_i/synchronizer_0'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_synchronizer_0_1/assignment_3_synchronizer_0_1/assignment_3_synchronizer_0_1_in_context.xdc] for cell 'assignment_3_i/synchronizer_1'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_synchronizer_0_1/assignment_3_synchronizer_0_1/assignment_3_synchronizer_0_1_in_context.xdc] for cell 'assignment_3_i/synchronizer_1'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_synchronizer_0_2/assignment_3_synchronizer_0_2/assignment_3_synchronizer_0_2_in_context.xdc] for cell 'assignment_3_i/synchronizer_2'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_synchronizer_0_2/assignment_3_synchronizer_0_2/assignment_3_synchronizer_0_2_in_context.xdc] for cell 'assignment_3_i/synchronizer_2'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_synchronizer_0_3/assignment_3_synchronizer_0_3/assignment_3_synchronizer_0_3_in_context.xdc] for cell 'assignment_3_i/synchronizer_3'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_synchronizer_0_3/assignment_3_synchronizer_0_3/assignment_3_synchronizer_0_3_in_context.xdc] for cell 'assignment_3_i/synchronizer_3'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_Rising_edge_detector_0_0/assignment_3_Rising_edge_detector_0_0/assignment_3_Rising_edge_detector_0_0_in_context.xdc] for cell 'assignment_3_i/Rising_edge_detector_0'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_Rising_edge_detector_0_0/assignment_3_Rising_edge_detector_0_0/assignment_3_Rising_edge_detector_0_0_in_context.xdc] for cell 'assignment_3_i/Rising_edge_detector_0'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_Falling_edge_detector_0_0/assignment_3_Falling_edge_detector_0_0/assignment_3_Falling_edge_detector_0_0_in_context.xdc] for cell 'assignment_3_i/Falling_edge_detector_0'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_Falling_edge_detector_0_0/assignment_3_Falling_edge_detector_0_0/assignment_3_Falling_edge_detector_0_0_in_context.xdc] for cell 'assignment_3_i/Falling_edge_detector_0'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_rx_mod_0_0/assignment_3_rx_mod_0_0/sub_spi_rx_mod_0_0_in_context.xdc] for cell 'assignment_3_i/rx_mod_0'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_rx_mod_0_0/assignment_3_rx_mod_0_0/sub_spi_rx_mod_0_0_in_context.xdc] for cell 'assignment_3_i/rx_mod_0'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_latch_1_0_0/assignment_3_latch_1_0_0/assignment_3_latch_1_0_0_in_context.xdc] for cell 'assignment_3_i/latch_1_0'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_latch_1_0_0/assignment_3_latch_1_0_0/assignment_3_latch_1_0_0_in_context.xdc] for cell 'assignment_3_i/latch_1_0'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_AND_gate_0_0/assignment_3_AND_gate_0_0/assignment_3_AND_gate_0_0_in_context.xdc] for cell 'assignment_3_i/AND_gate_0'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_AND_gate_0_0/assignment_3_AND_gate_0_0/assignment_3_AND_gate_0_0_in_context.xdc] for cell 'assignment_3_i/AND_gate_0'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_tx_mod_0_0/assignment_3_tx_mod_0_0/sub_spi_tx_mod_0_0_in_context.xdc] for cell 'assignment_3_i/tx_mod_0'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_tx_mod_0_0/assignment_3_tx_mod_0_0/sub_spi_tx_mod_0_0_in_context.xdc] for cell 'assignment_3_i/tx_mod_0'
+Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_clock_div_0_1/assignment_3_clock_div_0_1/assignment_3_clock_div_0_1_in_context.xdc] for cell 'assignment_3_i/clock_div_0'
+Finished Parsing XDC File [c:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.gen/sources_1/bd/assignment_3/ip/assignment_3_clock_div_0_1/assignment_3_clock_div_0_1/assignment_3_clock_div_0_1_in_context.xdc] for cell 'assignment_3_i/clock_div_0'
+Parsing XDC File [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sysclk'. [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc:30]
+Finished Parsing XDC File [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/assignment_3_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/PYNQ-Z2_v1.0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/assignment_3_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/assignment_3_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1470.961 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1470.961 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1470.961 ; gain = 561.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1470.961 ; gain = 561.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for assignment_3_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for assignment_3_i/SPI_sub. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for assignment_3_i/synchronizer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for assignment_3_i/synchronizer_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for assignment_3_i/synchronizer_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for assignment_3_i/synchronizer_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for assignment_3_i/Rising_edge_detector_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for assignment_3_i/Falling_edge_detector_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for assignment_3_i/rx_mod_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for assignment_3_i/latch_1_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for assignment_3_i/AND_gate_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for assignment_3_i/tx_mod_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for assignment_3_i/clock_div_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1470.961 ; gain = 561.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.srcs/utils_1/imports/synth_1/sub_spi_wrapper.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1470.961 ; gain = 561.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1470.961 ; gain = 561.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1470.961 ; gain = 561.828
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1470.961 ; gain = 561.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1470.961 ; gain = 561.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1470.961 ; gain = 561.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1470.961 ; gain = 561.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1470.961 ; gain = 561.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1470.961 ; gain = 561.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1470.961 ; gain = 561.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1470.961 ; gain = 561.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1470.961 ; gain = 561.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1470.961 ; gain = 561.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------------+----------+
+|      |BlackBox name                          |Instances |
++------+---------------------------------------+----------+
+|1     |assignment_3_AND_gate_0_0              |         1|
+|2     |assignment_3_Falling_edge_detector_0_0 |         1|
+|3     |assignment_3_Rising_edge_detector_0_0  |         1|
+|4     |assignment_3_SPI_sub_0                 |         1|
+|5     |assignment_3_clock_div_0_1             |         1|
+|6     |assignment_3_latch_1_0_0               |         1|
+|7     |assignment_3_rx_mod_0_0                |         1|
+|8     |assignment_3_synchronizer_0_0          |         1|
+|9     |assignment_3_synchronizer_0_1          |         1|
+|10    |assignment_3_synchronizer_0_2          |         1|
+|11    |assignment_3_synchronizer_0_3          |         1|
+|12    |assignment_3_tx_mod_0_0                |         1|
++------+---------------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------------+------+
+|      |Cell                                 |Count |
++------+-------------------------------------+------+
+|1     |assignment_3_AND_gate_0              |     1|
+|2     |assignment_3_Falling_edge_detector_0 |     1|
+|3     |assignment_3_Rising_edge_detector_0  |     1|
+|4     |assignment_3_SPI_sub                 |     1|
+|5     |assignment_3_clock_div_0             |     1|
+|6     |assignment_3_latch_1_0               |     1|
+|7     |assignment_3_rx_mod_0                |     1|
+|8     |assignment_3_synchronizer_0          |     4|
+|12    |assignment_3_tx_mod_0                |     1|
+|13    |IBUF                                 |     6|
+|14    |OBUF                                 |     2|
++------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1470.961 ; gain = 561.828
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1470.961 ; gain = 545.402
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1470.961 ; gain = 561.828
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1474.004 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1482.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 5de85193
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 9 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1482.652 ; gain = 998.871
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1482.652 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Corne/Documents/MEGA/4. Semester/Digital/SPI_Assignment/SPI_sub/SPI_sub.runs/synth_1/assignment_3_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file assignment_3_wrapper_utilization_synth.rpt -pb assignment_3_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 19 15:54:44 2024...

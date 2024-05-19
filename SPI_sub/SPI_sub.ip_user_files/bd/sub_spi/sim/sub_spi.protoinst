@@ -1,9 +1,0 @@
-{
-	"version": "1.0",
-	"modules": {
-		"sub_spi": {
-			"proto_instances": {
-			}
-		}
-	}
-}

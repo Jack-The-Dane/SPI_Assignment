@@ -32,8 +32,8 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity clock_div is
-    generic(n_bits : positive := 2;
-            half_val : natural := 3);
+    generic(n_bits : positive := 10;
+            half_val : natural := 407);
     Port ( rst : in STD_LOGIC := '0';
            clk : in STD_LOGIC := '0';
            clk_div : out STD_LOGIC);
